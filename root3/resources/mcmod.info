@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "confiance5th",
+    "name": "Confiance5th",
+    "description": "",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
