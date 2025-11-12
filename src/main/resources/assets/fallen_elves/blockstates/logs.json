@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y,type=magic":  { "model": "fallen_elves:log_magic" },
+    "axis=z,type=magic":   { "model": "fallen_elves:log_magic", "x": 90 },
+    "axis=x,type=magic":   { "model": "fallen_elves:log_magic", "x": 90, "y": 90 }
+  }
+}

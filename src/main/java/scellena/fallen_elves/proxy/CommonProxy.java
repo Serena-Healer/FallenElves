@@ -35,6 +35,7 @@ import scellena.fallen_elves.network.PacketHandler;
 import scellena.fallen_elves.potions.PotionsHandler;
 import scellena.fallen_elves.util.OreDict;
 import scellena.fallen_elves.util.SoundsHandler;
+import scellena.fallen_elves.worldgen.gen.GeneratorHandler;
 
 import java.util.Objects;
 
@@ -59,9 +60,9 @@ public abstract class CommonProxy {
         EntityHandler.init();
         System.out.println("Entities registered");
 
-        /*
         GeneratorHandler.init();
         System.out.println("Generator inited");
+        /*
         StructureHandler.init();
         System.out.println("Structures inited");
         BiomeHandler.init();

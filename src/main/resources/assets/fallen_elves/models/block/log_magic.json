@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "fallen_elves:block/material/log_magic_top",
+    "side": "fallen_elves:block/material/log_magic"
+  }
+}

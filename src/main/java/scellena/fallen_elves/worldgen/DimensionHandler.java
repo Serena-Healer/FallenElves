@@ -10,11 +10,6 @@ import java.util.List;
 public class DimensionHandler {
 
     public static List<DimensionType> allDimensions = new ArrayList<>();
-    public static DimensionType AETHER;
-    public static DimensionType DIM1;
-    public static DimensionType DIM2;
-    public static DimensionType DIM3;
-    public static DimensionType INSTANCE;
     public static int id = 0;
     public static final int ID_START = 3863;
 

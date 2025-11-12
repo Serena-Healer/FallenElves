@@ -5,6 +5,9 @@ import net.minecraft.block.material.Material;
 import net.minecraftforge.fluids.Fluid;
 import scellena.fallen_elves.blocks.fluids.FluidBlock;
 import scellena.fallen_elves.blocks.fluids.FluidsHandler;
+import scellena.fallen_elves.blocks.material.crops.BlockRobeFlower;
+import scellena.fallen_elves.blocks.material.ore.BlockMagicOre;
+import scellena.fallen_elves.blocks.material.wood.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,9 +18,31 @@ public class BlockHandler {
 
     public static List<IBlockBase> allBlocks = new ArrayList<>();
 
+    public static Block PLANKS;
+    public static Block SLABS;
+    public static Block SLABS_FULL;
+    public static Block STAIR_1;
+    public static Block STAIR_2;
+    public static Block LOGS;
+    public static Block LEAFS;
+    public static Block SAPLINGS;
+    public static Block FLOWER;
+    public static Block ORE;
+
     public static Map<Fluid, FluidBlock> FLUIDS = new HashMap<>();
 
     public static void init(){
+        //ブロックを登録
+        PLANKS = register("planks", new BlockPlanks());
+        SLABS = register("slab", new BlockWoodSlabHalf());
+        SLABS_FULL = register("slab_full", new BlockWoodSlabDouble());
+        STAIR_1 = register("magic_stairs", new BlockStairs(PLANKS.getDefaultState().withProperty(BlockPlanks.TYPE, WoodSet.EnumWoodTypes.MAGIC)));
+        LOGS = register("logs", new BlockLogs());
+        LEAFS = register("leaves", new BlockLeafs());
+        SAPLINGS = register("saplings", new BlockSaplings());
+        FLOWER = register("robe_flower", new BlockRobeFlower());
+        ORE = register("armor_ore", new BlockMagicOre());
+
         //液体を登録
         FluidsHandler.fluids.forEach(f -> {
             FLUIDS.put((Fluid) f, (FluidBlock) register(f.getName(), new FluidBlock(f)));

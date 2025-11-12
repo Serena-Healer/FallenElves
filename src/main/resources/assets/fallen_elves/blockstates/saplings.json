@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "stage=0,type=magic": {
+      "model": "fallen_elves:saplings_magic"
+    },
+    "stage=1,type=magic": {
+      "model": "fallen_elves:saplings_magic"
+    }
+  }
+}

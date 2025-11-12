@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=magic": {
+      "model": "fallen_elves:planks_magic"
+    }
+  }
+}

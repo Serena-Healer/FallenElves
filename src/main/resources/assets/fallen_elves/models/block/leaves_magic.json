@@ -1,0 +1,6 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "fallen_elves:block/material/leaves_magic"
+  }
+}

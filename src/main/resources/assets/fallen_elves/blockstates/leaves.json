@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "check_decay=true,decayable=true,type=magic": {
+      "model": "fallen_elves:leaves_magic"
+    },
+    "check_decay=false,decayable=true,type=magic": {
+      "model": "fallen_elves:leaves_magic"
+    },
+    "check_decay=true,decayable=false,type=magic": {
+      "model": "fallen_elves:leaves_magic"
+    },
+    "check_decay=false,decayable=false,type=magic": {
+      "model": "fallen_elves:leaves_magic"
+    }
+  }
+}

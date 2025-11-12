@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "fallen_elves:block/material/saplings_magic"
+    }
+}
