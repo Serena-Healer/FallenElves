@@ -3,6 +3,7 @@ package scellena.fallen_elves.items;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import scellena.fallen_elves.items.wands.ItemWand;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,6 +15,8 @@ public class ItemHandler {
     public static List<IItemBase> allItems = new ArrayList<>();
 
     public static void init(){
+
+        register("wand", new ItemWand());
 
     }
 
