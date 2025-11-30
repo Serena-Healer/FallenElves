@@ -22,6 +22,14 @@ public class GuiUtils {
         }
     }
 
+    public static void drawStringMiddle(FontRenderer renderer, String str, int rightX, int y, int color, boolean shadow){
+        if(shadow) {
+            renderer.drawStringWithShadow(str, rightX - renderer.getStringWidth(str) / 2, y, color);
+        }else{
+            renderer.drawString(str, rightX - renderer.getStringWidth(str) / 2, y, color);
+        }
+    }
+
     public static void drawHorizontalGradientRect(int left, int top, int right, int bottom, int startColor, int endColor, double z)
     {
         float f = (float)(startColor >> 24 & 255) / 255.0F;

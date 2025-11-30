@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "fallen_elves:dirt" },
+            { "model": "fallen_elves:dirt", "y": 90 },
+            { "model": "fallen_elves:dirt", "y": 180 },
+            { "model": "fallen_elves:dirt", "y": 270 }
+        ]
+    }
+}

@@ -10,19 +10,11 @@ import scellena.fallen_elves.FallenElves;
 @SideOnly(Side.CLIENT)
 public class SoundsHandler {
 
-    public static SoundEvent PAPER;
-    public static SoundEvent COINS;
-    public static SoundEvent GUI_POINT;
-    public static SoundEvent NAMED;
-    public static SoundEvent LEVELUP;
+    public static SoundEvent LEVEL;
 
 
     public static void init(){
-        PAPER = registerSound("paper");
-        COINS = registerSound("coins");
-        GUI_POINT = registerSound("gui_point");
-        NAMED = registerSound("named");
-        LEVELUP = registerSound("levelup");
+        LEVEL = registerSound("level");
     }
 
     public static SoundEvent registerSound(String name){

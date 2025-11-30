@@ -1,0 +1,6 @@
+item.wand.name=エルフの杖
+tile.spell_set.name=魔術作業台
+
+spell.fallen_elves:test.name=暗黒弾
+spell.fallen_elves:heal.name=ヒール
+spell.fallen_elves:the_last.name=§kDestroyerTakahashi

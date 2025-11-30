@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,6 +17,7 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.RegistryBuilder;
 import scellena.fallen_elves.FallenElves;
 import scellena.fallen_elves.blocks.BlockHandler;
 import scellena.fallen_elves.blocks.IBlockWithBlockItem;
@@ -28,11 +30,13 @@ import scellena.fallen_elves.data.entity.EntityCapabilityStorage;
 import scellena.fallen_elves.data.entity.EntityDataHandler;
 import scellena.fallen_elves.data.player.CapabilityStorage;
 import scellena.fallen_elves.data.player.PlayerDataHandler;
+import scellena.fallen_elves.decay.BlockDecayHelper;
 import scellena.fallen_elves.entities.EntityHandler;
 import scellena.fallen_elves.events.handler.CapabilityEventHandler;
 import scellena.fallen_elves.items.ItemHandler;
 import scellena.fallen_elves.network.PacketHandler;
 import scellena.fallen_elves.potions.PotionsHandler;
+import scellena.fallen_elves.spells.SpellRegistry;
 import scellena.fallen_elves.util.OreDict;
 import scellena.fallen_elves.util.SoundsHandler;
 import scellena.fallen_elves.worldgen.gen.GeneratorHandler;
@@ -50,6 +54,9 @@ public abstract class CommonProxy {
 
         FluidsHandler.init();
         System.out.println("Fluid inited");
+
+        SpellRegistry.init();
+        System.out.println("Spells inited");
 
         PacketHandler.initPackets();
         System.out.println("Packet inited");
@@ -90,6 +97,8 @@ public abstract class CommonProxy {
         System.out.println("Ore Dictionary inited");
         PotionsHandler.init();
         System.out.println("Potions inited");
+        BlockDecayHelper.initMap();
+        System.out.println("Decaying Block Data inited");
 
         System.out.println(FallenElves.MOD_NAME + " : Init took: " + (System.nanoTime() - startTime) + "ms.");
     }
@@ -148,7 +157,10 @@ public abstract class CommonProxy {
 
         @SubscribeEvent
         public static void addRegistries(RegistryEvent.NewRegistry event){
-
+            RegistryBuilder<SpellRegistry.SpellRegistryEntry> spells = new RegistryBuilder<>();
+            spells.setType(SpellRegistry.SpellRegistryEntry.class);
+            spells.setName(new ResourceLocation(FallenElves.MOD_ID, "spells"));
+            SpellRegistry.SPELLS = spells.create();
         }
     }
 

@@ -1,0 +1,10 @@
+{
+    "parent": "block/grass",
+    "textures": {
+        "particle": "fallen_elves:block/general/dirt",
+        "bottom": "fallen_elves:block/general/dirt",
+        "top": "fallen_elves:block/general/grass_top",
+        "side": "fallen_elves:block/general/grass_side",
+        "overlay": "fallen_elves:block/general/grass_side_overlay"
+    }
+}
