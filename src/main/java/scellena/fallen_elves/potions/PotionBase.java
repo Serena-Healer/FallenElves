@@ -10,12 +10,12 @@ import javax.annotation.Nullable;
 
 public class PotionBase extends Potion {
 
-    protected PotionBase(String name, int color) {
-        super(false,color);
+    protected PotionBase(String name, int color, boolean badEffectIn) {
+        super(badEffectIn, color);
         setPotionName(name);
         setRegistryName(new ResourceLocation(FallenElves.MOD_ID,name));
         PotionsHandler.potionList.add(this);
-        this.setBeneficial();
+        if(!badEffectIn) this.setBeneficial();
     }
 
     @Override

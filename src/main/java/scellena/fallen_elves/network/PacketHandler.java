@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
 import scellena.fallen_elves.FallenElves;
 import scellena.fallen_elves.network.CPackets.*;
+import scellena.fallen_elves.network.SPackets.SkillSetPacket;
 
 public class PacketHandler {
 
@@ -18,6 +19,7 @@ public class PacketHandler {
         INSTANCE.registerMessage(WorldDataSyncPacket.PacketSyncHandler.class, WorldDataSyncPacket.class, id++, Side.CLIENT);
 
         //サーバー側
+        INSTANCE.registerMessage(SkillSetPacket.PacketSyncHandler.class, SkillSetPacket.class, id++, Side.SERVER);
     }
 
 }

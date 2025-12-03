@@ -17,6 +17,7 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.world.WorldServer;
+import scellena.fallen_elves.decay.DecayTicker;
 import scellena.fallen_elves.network.CPackets.EntityDataSyncPacket;
 import scellena.fallen_elves.network.PacketHandler;
 import scellena.fallen_elves.spells.SpellBase;
@@ -49,6 +50,9 @@ public class EntityDataHandler {
     Map<ResourceLocation, SpellBase> spellObjects = new HashMap<>();
 
     double mana = 0;
+
+    //邪神の介入タイマー
+    int randomEventTick = 0;
 
     public void readNBT(NBTBase nbtin){
         if(nbtin instanceof NBTTagCompound){
@@ -120,6 +124,10 @@ public class EntityDataHandler {
         for(SpellBase spell : getSpellObjects().values()){
             spell.onTick();
         }
+
+        addMana(SpellHelper.getManaRegen(owner) / 20.0);
+        randomEventTick--;
+        DecayTicker.onTick(owner);
     }
 
     public void update(){
@@ -166,6 +174,15 @@ public class EntityDataHandler {
         if(mana < 0) mana = 0;
         if(mana > SpellHelper.getMaxMana(owner)) mana = SpellHelper.getMaxMana(owner);
         update();
+    }
+
+    public int getRandomEventTick() {
+        return randomEventTick;
+    }
+
+    public EntityDataHandler setRandomEventTick(int randomEventTick) {
+        this.randomEventTick = randomEventTick;
+        return this;
     }
 
     public Map<ResourceLocation, SpellBase> getSpellObjects() {

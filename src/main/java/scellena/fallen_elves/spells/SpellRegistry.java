@@ -5,7 +5,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 import scellena.fallen_elves.FallenElves;
 import scellena.fallen_elves.spells.types.HealSpell;
-import scellena.fallen_elves.spells.types.TestSpell;
+import scellena.fallen_elves.spells.types.BulletSpell;
 import scellena.fallen_elves.spells.types.TheLastSpell;
 
 public class SpellRegistry {
@@ -13,7 +13,7 @@ public class SpellRegistry {
 
     public static void init(){
 
-        SPELLS.register(new SpellRegistryEntry(TestSpell.class, new ResourceLocation(FallenElves.MOD_ID, "test")));
+        SPELLS.register(new SpellRegistryEntry(BulletSpell.class, new ResourceLocation(FallenElves.MOD_ID, "test")));
         SPELLS.register(new SpellRegistryEntry(HealSpell.class, new ResourceLocation(FallenElves.MOD_ID, "heal")));
         SPELLS.register(new SpellRegistryEntry(TheLastSpell.class, new ResourceLocation(FallenElves.MOD_ID, "the_last")));
 

@@ -3,6 +3,7 @@ package scellena.fallen_elves.items;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import scellena.fallen_elves.items.consumables.ItemDebug;
 import scellena.fallen_elves.items.spellbooks.ItemSpellbook;
 import scellena.fallen_elves.items.wands.ItemWand;
 import scellena.fallen_elves.spells.SpellRegistry;
@@ -23,6 +24,8 @@ public class ItemHandler {
         for(SpellRegistry.SpellRegistryEntry entry : SpellRegistry.SPELLS){
             register("spellbook_" + entry.getRegistryName().getPath(), new ItemSpellbook(entry.getSpell()));
         }
+
+        register("debug", new ItemDebug());
 
     }
 

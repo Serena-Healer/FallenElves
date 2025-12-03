@@ -19,14 +19,17 @@ public class SpellHelper {
      * @return 経験値差分
      */
     public static double getXPRequired(int level){
-        return 10000;
+        if(level == 2) return 500;
+        if(level == 3) return 1500;
+        if(level == 4) return 3000;
+        if(level == 5) return 5000;
+        return Math.pow(1.11, level) * 6000;
     }
 
     public static boolean checkManaCost(Entity owner, SpellBase spell){
         if(owner == null) return false;
         EntityDataHandler data = EntityCapabilityProvider.getEntityData(owner);
         if(data == null) return false;
-        System.out.println("DEBUG: " + owner.getDisplayName().toString() + " Mana: " + data.getMana() + " XP: " + data.getCurrentXP());
         return data.getMana() >= spell.getManaCost();
     }
 
@@ -39,7 +42,14 @@ public class SpellHelper {
     }
 
     public static double getMaxMana(Entity owner){
-        return 998244353;
+        return Math.pow(1.1, EntityCapabilityProvider.getEntityData(owner).getCurrentLevel() - 1) * 100;
+    }
+
+    /**
+     * 1s あたりの MP 回復量を返す。
+     */
+    public static double getManaRegen(Entity owner){
+        return getMaxMana(owner) * 0.01;
     }
 
     public static Map<ResourceLocation, SpellBase> getSpellObjects(Entity entity){

@@ -38,6 +38,8 @@ public class ClientProxy extends CommonProxy{
         super.preinit(event);
         MinecraftForge.EVENT_BUS.register(new KeyHandler());
         MinecraftForge.EVENT_BUS.register(new ClientEventHandler());
+        ClientRegistry.registerKeyBinding(KeyHandler.GO_NEXT_SKILL);
+        ClientRegistry.registerKeyBinding(KeyHandler.GO_BACK_SKILL);
     }
 
     public void init(FMLInitializationEvent event) {

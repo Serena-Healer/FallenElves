@@ -4,3 +4,14 @@ tile.spell_set.name=魔術作業台
 spell.fallen_elves:test.name=暗黒弾
 spell.fallen_elves:heal.name=ヒール
 spell.fallen_elves:the_last.name=§kDestroyerTakahashi
+
+decay.overridden.activate=体が何かに乗っ取られているように感じた...。
+decay.hostile.activate=動物や人間を襲いたい衝動に駆られ始めた...！
+decay.alliance.activate=魔物たちが同胞のように感じられるようになった...！
+decay.alliance_2.activate=「魔物たちは真に「仲間」であり、決して殺してはならない...！」
+
+death.alliance_violation=%s は自分の本能に背いた結果生きる意志を失った
+
+key.categories.fallen_elves=Fallen Elves
+key.next_skill=次の魔法に切り替え
+key.back_skill=前の魔法に切り替え

@@ -36,8 +36,8 @@ public class ItemWand extends ItemBase {
 
     public SpellBase getSetSpell(EntityPlayer playerIn, ItemStack stackIn){
         NBTTagCompound nbt = getNBTShareTag(stackIn);
-        if(nbt != null && nbt.hasKey(SPELL_NBT_KEY)) {
-            int id = nbt.getInteger(SPELL_NBT_KEY);
+        int id = getSpellId(playerIn, stackIn);
+        if(id >= 0) {
             List<ItemStack> books = loadStacks(stackIn);
             if(books.size() >= id){
                 ItemStack stack1 = books.get(id);
@@ -55,7 +55,17 @@ public class ItemWand extends ItemBase {
         if(nbt == null) {
             nbt = new NBTTagCompound();
         }
-        nbt.setInteger(SPELL_NBT_KEY, id);
+        int size = loadStacks(stackIn).size();
+        nbt.setInteger(SPELL_NBT_KEY, (id + size) % size);
+    }
+
+    public int getSpellId(EntityPlayer playerIn, ItemStack stackIn){
+        NBTTagCompound nbt = getNBTShareTag(stackIn);
+        if(nbt != null && nbt.hasKey(SPELL_NBT_KEY)) {
+            int id = nbt.getInteger(SPELL_NBT_KEY);
+            return id;
+        }
+        return -1;
     }
 
     public List<ItemStack> loadStacks(ItemStack stackIn){

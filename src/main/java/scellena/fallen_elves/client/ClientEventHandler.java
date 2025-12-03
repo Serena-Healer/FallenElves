@@ -73,7 +73,7 @@ public class ClientEventHandler {
 
             //レベル
             Minecraft.getMinecraft().ingameGUI.drawTexturedModalRect(x + 132, y, 127, 0, 23, 23);
-            GuiUtils.drawNumberRight(renderer, level + 1, x + 132 + 18, y + 12, 0, false);
+            GuiUtils.drawNumberRight(renderer, level, x + 132 + 18, y + 12, 0, false);
 
             //現在魔法表示
             ItemStack heldItem = Minecraft.getMinecraft().player.getHeldItemMainhand();

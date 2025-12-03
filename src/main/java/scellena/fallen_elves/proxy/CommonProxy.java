@@ -33,6 +33,7 @@ import scellena.fallen_elves.data.player.PlayerDataHandler;
 import scellena.fallen_elves.decay.BlockDecayHelper;
 import scellena.fallen_elves.entities.EntityHandler;
 import scellena.fallen_elves.events.handler.CapabilityEventHandler;
+import scellena.fallen_elves.events.handler.DecayEventHandler;
 import scellena.fallen_elves.items.ItemHandler;
 import scellena.fallen_elves.network.PacketHandler;
 import scellena.fallen_elves.potions.PotionsHandler;
@@ -47,6 +48,7 @@ public abstract class CommonProxy {
 
     public void construct(FMLConstructionEvent event){
         MinecraftForge.EVENT_BUS.register(new CapabilityEventHandler());
+        MinecraftForge.EVENT_BUS.register(new DecayEventHandler());
     }
 
     public void preinit(FMLPreInitializationEvent event) {
