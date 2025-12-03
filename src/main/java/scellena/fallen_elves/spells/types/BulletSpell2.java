@@ -8,12 +8,11 @@ import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.util.text.TextComponentString;
 import scellena.fallen_elves.data.entity.EntityCapabilityProvider;
 import scellena.fallen_elves.spells.SpellBase;
 import scellena.fallen_elves.util.SkillUtils;
 
-public class BulletSpell extends SpellBase {
+public class BulletSpell2 extends SpellBase {
     Vec3d position;
     Vec3d direction;
     int duration = 0;
@@ -29,7 +28,7 @@ public class BulletSpell extends SpellBase {
     @Override
     public void onTick() {
         super.onTick();
-        float amount = 4F + EntityCapabilityProvider.getEntityData(getOwner()).getCurrentLevel() * 0.02F;
+        float amount = 5F + EntityCapabilityProvider.getEntityData(getOwner()).getCurrentLevel() * 0.04F;
         if(duration > 0) {
             for (int i = 0; i < 50; i++) {
                 position = position.add(direction.normalize().scale(0.1));
@@ -55,6 +54,6 @@ public class BulletSpell extends SpellBase {
 
     @Override
     public double getManaCost() {
-        return 10;
+        return 50;
     }
 }

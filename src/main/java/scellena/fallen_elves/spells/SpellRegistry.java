@@ -4,17 +4,24 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 import scellena.fallen_elves.FallenElves;
-import scellena.fallen_elves.spells.types.HealSpell;
-import scellena.fallen_elves.spells.types.BulletSpell;
-import scellena.fallen_elves.spells.types.TheLastSpell;
+import scellena.fallen_elves.spells.types.*;
 
 public class SpellRegistry {
     public static IForgeRegistry<SpellRegistryEntry> SPELLS;
 
     public static void init(){
 
-        SPELLS.register(new SpellRegistryEntry(BulletSpell.class, new ResourceLocation(FallenElves.MOD_ID, "test")));
+        SPELLS.register(new SpellRegistryEntry(BulletSpell.class, new ResourceLocation(FallenElves.MOD_ID, "bullet")));
+        SPELLS.register(new SpellRegistryEntry(BulletSpell2.class, new ResourceLocation(FallenElves.MOD_ID, "bullet_2")));
+        SPELLS.register(new SpellRegistryEntry(ExplodeSpell.class, new ResourceLocation(FallenElves.MOD_ID, "bullet_area")));
+        SPELLS.register(new SpellRegistryEntry(ExplodeFromSelfSpell.class, new ResourceLocation(FallenElves.MOD_ID, "explode")));
+
         SPELLS.register(new SpellRegistryEntry(HealSpell.class, new ResourceLocation(FallenElves.MOD_ID, "heal")));
+        SPELLS.register(new SpellRegistryEntry(HealingBulletSpell.class, new ResourceLocation(FallenElves.MOD_ID, "heal_bullet")));
+        SPELLS.register(new SpellRegistryEntry(AreaHealSpell.class, new ResourceLocation(FallenElves.MOD_ID, "heal_area")));
+
+        SPELLS.register(new SpellRegistryEntry(AreaHealSpell.class, new ResourceLocation(FallenElves.MOD_ID, "shield")));
+
         SPELLS.register(new SpellRegistryEntry(TheLastSpell.class, new ResourceLocation(FallenElves.MOD_ID, "the_last")));
 
     }
