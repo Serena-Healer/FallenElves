@@ -28,7 +28,7 @@ public class HealingBulletSpell extends SpellBase {
     @Override
     public void onTick() {
         super.onTick();
-        float amount = 3F * EntityCapabilityProvider.getEntityData(getOwner()).getCurrentLevel() * 0.015F;
+        float amount = 3F + EntityCapabilityProvider.getEntityData(getOwner()).getCurrentLevel() * 0.015F;
         if(duration > 0) {
             for (int i = 0; i < 50; i++) {
                 position = position.add(direction.normalize().scale(0.1));

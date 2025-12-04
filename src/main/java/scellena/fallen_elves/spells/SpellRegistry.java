@@ -20,7 +20,7 @@ public class SpellRegistry {
         SPELLS.register(new SpellRegistryEntry(HealingBulletSpell.class, new ResourceLocation(FallenElves.MOD_ID, "heal_bullet")));
         SPELLS.register(new SpellRegistryEntry(AreaHealSpell.class, new ResourceLocation(FallenElves.MOD_ID, "heal_area")));
 
-        SPELLS.register(new SpellRegistryEntry(AreaHealSpell.class, new ResourceLocation(FallenElves.MOD_ID, "shield")));
+        SPELLS.register(new SpellRegistryEntry(ShieldSpell.class, new ResourceLocation(FallenElves.MOD_ID, "shield")));
 
         SPELLS.register(new SpellRegistryEntry(TheLastSpell.class, new ResourceLocation(FallenElves.MOD_ID, "the_last")));
 

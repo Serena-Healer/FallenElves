@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "fallen_elves:spell_set" }
+        ]
+    }
+}

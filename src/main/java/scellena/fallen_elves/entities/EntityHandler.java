@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import scellena.fallen_elves.FallenElves;
+import scellena.fallen_elves.entities.mobs.a.Elf;
 import scellena.fallen_elves.entities.models.renderer.PlayerBasedRenderer;
 
 import java.util.ArrayList;
@@ -19,11 +20,13 @@ public class EntityHandler {
     public static List<Class<? extends Entity>> allEntities = new ArrayList<>();
 
     public static void init(){
+        register("elf", Elf.class);
     }
 
     @SideOnly(Side.CLIENT)
     public static void registerModels(){
-            }
+        playerEntityRender("elf", Elf.class, true);
+    }
 
     public static Class<? extends Entity> register(String name, Class<? extends Entity> entity){
         EntityRegistry.registerModEntity(new ResourceLocation(FallenElves.MOD_ID, name), (Class<? extends Entity>) entity, name, id++, FallenElves.INSTANCE,50,1,true,-1,-1);

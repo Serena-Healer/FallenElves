@@ -75,4 +75,9 @@ public class SpellSetBlock extends BlockBase implements IBlockWithTileEntity, IT
         super.breakBlock(worldIn, pos, state);
     }
 
+    @Override
+    public boolean isOpaqueCube(IBlockState state) {
+        return false;
+    }
+
 }

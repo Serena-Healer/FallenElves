@@ -89,7 +89,15 @@ public class ContainerSpellSet extends Container {
         int i = 0;
         emptySpellSlots();
         for(ItemStack stack1 : ((ItemWand)stack.getItem()).loadStacks(stack)){
-            tileEntity.setInventorySlotContents(++i, stack1);
+            for(int j=0; j<18; j++){
+                ItemStack stack2 = tileEntity.getStackInSlot(i + 6);
+                if(stack2.isItemEqual(stack1)){
+                    tileEntity.setInventorySlotContents(i, stack1);
+                    stack2.setCount(stack2.getCount() - 1);
+                    break;
+                }
+            }
+            i++;
         }
     }
 
@@ -115,6 +123,10 @@ public class ContainerSpellSet extends Container {
             if(!stack.isEmpty()){
                 for(int j=0; j<18; j++){
                     ItemStack stack1 = tileEntity.getStackInSlot(j + 6);
+                    if(stack1.isItemEqual(stack)){
+                        stack1.setCount(stack.getCount() + stack1.getCount());
+                        break;
+                    }
                     if(stack1.isEmpty()){
                         tileEntity.setInventorySlotContents(j + 6, stack);
                         break;
