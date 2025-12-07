@@ -24,8 +24,8 @@ public class WorldGenOres implements IWorldGenerator {
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
         int id = world.provider.getDimension() - DimensionHandler.ID_START;
-        if(id >= 0 && id <= 10){
-            run(ORE_ARMOR_GEN, world, random, chunkX, chunkZ, 10, 13, 70);
+        if(world.provider.getDimension() == 0){
+            run(ORE_ARMOR_GEN, world, random, chunkX, chunkZ, 10, 0, 32);
         }
     }
 

@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "farland1ng:misc/topaz_staff"
+    }
+}

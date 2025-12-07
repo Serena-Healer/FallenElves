@@ -6,6 +6,9 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
 
 import java.util.List;
 import java.util.Random;
@@ -97,6 +100,16 @@ public class Utilities {
 
     public static int getRandomInteger(int amount){
         return (amount / 1000) + (new Random().nextDouble() * 1000 < (amount % 1000) ? 1 : 0);
+    }
+
+    public static BlockPos getTopPos(World world, BlockPos v){
+        for(int i=0; i<255; i++){
+            BlockPos v2 = v.add(0, i, 0);
+            if(!world.getBlockState(v2).getBlock().isCollidable()){
+                return v2;
+            }
+        }
+        return v;
     }
 
 }

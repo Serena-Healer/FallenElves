@@ -10,7 +10,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.text.TextComponentString;
 import scellena.fallen_elves.data.entity.EntityCapabilityProvider;
+import scellena.fallen_elves.spells.SpellAttributes;
 import scellena.fallen_elves.spells.SpellBase;
+import scellena.fallen_elves.spells.SpellHelper;
 import scellena.fallen_elves.util.SkillUtils;
 
 public class BulletSpell extends SpellBase {
@@ -29,7 +31,7 @@ public class BulletSpell extends SpellBase {
     @Override
     public void onTick() {
         super.onTick();
-        float amount = 4F + EntityCapabilityProvider.getEntityData(getOwner()).getCurrentLevel() * 0.02F;
+        float amount = (float) (4F * (1.0F + 0.01F * SpellHelper.getMight(getOwner())));
         if(duration > 0) {
             for (int i = 0; i < 50; i++) {
                 position = position.add(direction.normalize().scale(0.1));

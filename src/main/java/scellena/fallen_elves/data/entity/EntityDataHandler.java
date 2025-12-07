@@ -20,6 +20,7 @@ import net.minecraft.world.WorldServer;
 import scellena.fallen_elves.decay.DecayTicker;
 import scellena.fallen_elves.network.CPackets.EntityDataSyncPacket;
 import scellena.fallen_elves.network.PacketHandler;
+import scellena.fallen_elves.spells.SpellAttributes;
 import scellena.fallen_elves.spells.SpellBase;
 import scellena.fallen_elves.spells.SpellHelper;
 import scellena.fallen_elves.spells.SpellRegistry;

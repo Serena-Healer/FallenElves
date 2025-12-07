@@ -1,17 +1,39 @@
 item.wand.name=エルフの杖
+item.wand_light.name=ひかりの杖
+item.sword_luminary.name=勇者の聖剣
+item.wand_knowledge.name=全知全能の杖
+item.spellbook.name=%Sの書
 tile.spell_set.name=魔術作業台
 
-spell.fallen_elves:test.name=暗黒弾
+spell.fallen_elves:bullet.name=暗黒弾
 spell.fallen_elves:heal.name=ヒール
-spell.fallen_elves:the_last.name=§kDestroyerTakahashi
+spell.fallen_elves:the_last.name=§kDestroyerTakahashi§r
 
-decay.overridden.activate=体が何かに乗っ取られているように感じた...。
-decay.hostile.activate=動物や人間を襲いたい衝動に駆られ始めた...！
-decay.alliance.activate=魔物たちが同胞のように感じられるようになった...！
-decay.alliance_2.activate=「魔物たちは真に「仲間」であり、決して殺してはならない...！」
+decay.overridden.activate=§5§l体が何かに乗っ取られているように感じた...。
+decay.hostile.activate=§5§l動物や人間を襲いたい衝動に駆られ始めた...！
+decay.alliance.activate=§5§l魔物たちが同胞のように感じられるようになった...！
+decay.alliance_2.activate=§5§l「魔物たちは真に「仲間」であり、決して殺してはならない...！」
+
+entity.elf.name=エルフの少女
+entity.elf_hostile.name=エルフの戦士
+entity.boss_luminary.name=勇者セーヴァ
+entity.boss_god.name=創世神エスパース
+
+decay.elf.activate=§dエルフの戦士「闇の気配...こっちね。みんな行くわよ！
+decay.luminary.activate.1=§eついに追い詰めたぞ、闇に手を染めし者...！
+decay.luminary.activate.2=§e君の犯した罪は大きい。光のもとに滅びるがよいっ！！
+decay.god.activate.1=§aあなたが、邪神の器となってしまった者...。
+decay.god.activate.2=§aとても残念ですが、世界を護るためには放っておくわけにはいきません。
+decay.god.activate.3=§a闇は世界を闇に染め、また世界を滅ぼしうるもの。
+decay.god.activate.4=§aさあ、光の裁きを受けなさいっ！！
 
 death.alliance_violation=%s は自分の本能に背いた結果生きる意志を失った
+death.attack.light=%s は %s の光に消し去られた
 
 key.categories.fallen_elves=Fallen Elves
 key.next_skill=次の魔法に切り替え
 key.back_skill=前の魔法に切り替え
+
+attribute.name.fallen_elves:mana=最大MP
+attribute.name.fallen_elves:magical_might=こうげき魔力
+attribute.name.fallen_elves:magical_mending=かいふく魔力

@@ -6,12 +6,13 @@ import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.SoundCategory;
 import scellena.fallen_elves.data.entity.EntityCapabilityProvider;
 import scellena.fallen_elves.spells.SpellBase;
+import scellena.fallen_elves.spells.SpellHelper;
 import scellena.fallen_elves.util.SkillUtils;
 
 public class AreaHealSpell extends SpellBase {
     @Override
     public boolean onRightClick() {
-        float amount = 4F + EntityCapabilityProvider.getEntityData(getOwner()).getCurrentLevel() * 0.15F;
+        float amount = (float) (4F * (1.0F + 0.02F * SpellHelper.getMending(getOwner())));
         SkillUtils.spawnParticleCircle(getOwner().world, getOwner().getPositionVector(), EnumParticleTypes.VILLAGER_HAPPY, 4);
         SkillUtils.playSoundFromServer(getOwner().world, getOwner().getPositionVector(), SoundEvents.ENTITY_ELDER_GUARDIAN_CURSE, SoundCategory.PLAYERS, 1, 1);
         SkillUtils.playSoundFromServer(getOwner().world, getOwner().getPositionVector(), SoundEvents.ENTITY_PLAYER_LEVELUP, SoundCategory.PLAYERS, 0.75F, 1);
@@ -23,6 +24,6 @@ public class AreaHealSpell extends SpellBase {
 
     @Override
     public double getManaCost() {
-        return 200;
+        return 100;
     }
 }

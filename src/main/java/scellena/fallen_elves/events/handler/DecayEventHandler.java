@@ -9,6 +9,7 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.EntityDamageSource;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import scellena.fallen_elves.entities.mobs.templetes.HostileMob;
 import scellena.fallen_elves.potions.PotionsHandler;
 
 public class DecayEventHandler {
@@ -20,7 +21,7 @@ public class DecayEventHandler {
         if(source instanceof EntityDamageSource){
             Entity attackedIn = source.getTrueSource();
             if(attackedIn instanceof EntityLivingBase){
-                if(target instanceof EntityMob){
+                if(target instanceof EntityMob && !(target instanceof HostileMob)){
                     if(((EntityLivingBase) attackedIn).getActivePotionEffect(PotionsHandler.ALLIANCE) != null) {
                         attackedIn.attackEntityFrom(new DamageSource("alliance_violation"), 998244353);
                     } else if(((EntityLivingBase) attackedIn).getActivePotionEffect(PotionsHandler.ALLIANCE) != null){

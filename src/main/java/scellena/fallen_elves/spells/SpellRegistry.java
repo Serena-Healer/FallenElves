@@ -24,6 +24,9 @@ public class SpellRegistry {
 
         SPELLS.register(new SpellRegistryEntry(TheLastSpell.class, new ResourceLocation(FallenElves.MOD_ID, "the_last")));
 
+        //敵専用
+        SPELLS.register(new SpellRegistryEntry(BulletSpellLight.class, new ResourceLocation(FallenElves.MOD_ID, "bullet_light")));
+
     }
 
     public static class SpellRegistryEntry extends IForgeRegistryEntry.Impl<SpellRegistryEntry> {

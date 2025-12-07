@@ -1,6 +1,7 @@
 package scellena.fallen_elves.spells;
 
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.ResourceLocation;
 import scellena.fallen_elves.data.entity.EntityCapabilityProvider;
 import scellena.fallen_elves.data.entity.EntityDataHandler;
@@ -19,11 +20,11 @@ public class SpellHelper {
      * @return 経験値差分
      */
     public static double getXPRequired(int level){
-        if(level == 2) return 500;
-        if(level == 3) return 1500;
-        if(level == 4) return 3000;
-        if(level == 5) return 5000;
-        return Math.pow(1.11, level) * 6000;
+        if(level == 2) return 200;
+        if(level == 3) return 700;
+        if(level == 4) return 1500;
+        if(level == 5) return 2500;
+        return Math.pow(1.05, level) * 5000;
     }
 
     public static boolean checkManaCost(Entity owner, SpellBase spell){
@@ -42,7 +43,27 @@ public class SpellHelper {
     }
 
     public static double getMaxMana(Entity owner){
-        return Math.pow(1.1, EntityCapabilityProvider.getEntityData(owner).getCurrentLevel() - 1) * 100;
+        if(!(owner instanceof EntityLivingBase)) return 0;
+        SpellAttributes.init((EntityLivingBase) owner);
+        double amount = Math.pow(1.1, EntityCapabilityProvider.getEntityData(owner).getCurrentLevel()) * 100;
+        amount += ((EntityLivingBase) owner).getEntityAttribute(SpellAttributes.MAX_MANA).getAttributeValue();
+        return amount;
+    }
+
+    public static double getMight(Entity owner){
+        if(!(owner instanceof EntityLivingBase)) return 0;
+        SpellAttributes.init((EntityLivingBase) owner);
+        double amount = EntityCapabilityProvider.getEntityData(owner).getCurrentLevel() * 5;
+        amount += ((EntityLivingBase) owner).getEntityAttribute(SpellAttributes.MAGICAL_MIGHT).getAttributeValue();
+        return amount;
+    }
+
+    public static double getMending(Entity owner){
+        if(!(owner instanceof EntityLivingBase)) return 0;
+        SpellAttributes.init((EntityLivingBase) owner);
+        double amount = EntityCapabilityProvider.getEntityData(owner).getCurrentLevel() * 5;
+        amount += ((EntityLivingBase) owner).getEntityAttribute(SpellAttributes.MAGICAL_MENDING).getAttributeValue();
+        return amount;
     }
 
     /**

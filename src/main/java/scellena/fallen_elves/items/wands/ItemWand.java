@@ -1,8 +1,13 @@
 package scellena.fallen_elves.items.wands;
 
+import com.google.common.collect.Multimap;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumHand;
@@ -11,16 +16,46 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import scellena.fallen_elves.items.ItemBase;
 import scellena.fallen_elves.items.spellbooks.ItemSpellbook;
+import scellena.fallen_elves.spells.SpellAttributes;
 import scellena.fallen_elves.spells.SpellBase;
 import scellena.fallen_elves.spells.SpellHelper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class ItemWand extends ItemBase {
 
     public static final String SPELL_NBT_KEY = "spell_type";
     public static final String SPELL_LIST_KEY = "spell_list";
+
+    public static UUID MIGHT_ID = UUID.fromString("12c799be-d16a-4c8c-bc05-64d46438332c");
+    public static UUID MENDING_ID = UUID.fromString("4c68009c-199e-487c-8775-9660ae6adee5");
+
+    public double damage;
+    public double might;
+    public double mending;
+
+    public ItemWand(double damage, double might, double mending) {
+        this.damage = damage;
+        this.might = might;
+        this.mending = mending;
+    }
+
+    public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot equipmentSlot)
+    {
+        Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(equipmentSlot);
+
+        if (equipmentSlot == EntityEquipmentSlot.MAINHAND)
+        {
+            multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(), new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Weapon modifier", damage, 0));
+            multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(), new AttributeModifier(ATTACK_SPEED_MODIFIER, "Weapon modifier", -2.4000000953674316D, 0));
+            multimap.put(SpellAttributes.MAGICAL_MIGHT.getName(), new AttributeModifier(MIGHT_ID, "Weapon modifier", might, 0));
+            multimap.put(SpellAttributes.MAGICAL_MENDING.getName(), new AttributeModifier(MENDING_ID, "Weapon modifier", mending, 0));
+        }
+
+        return multimap;
+    }
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {

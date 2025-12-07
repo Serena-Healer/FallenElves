@@ -49,8 +49,8 @@ public class BlockHandler {
         LOGS = register("logs", new BlockLogs());
         LEAFS = register("leaves", new BlockLeafs());
         SAPLINGS = register("saplings", new BlockSaplings());
-        FLOWER = register("robe_flower", new BlockRobeFlower());
-        ORE = register("armor_ore", new BlockMagicOre());
+        //FLOWER = register("robe_flower", new BlockRobeFlower());
+        ORE = register("magic_ore", new BlockMagicOre());
 
         SPELL_SET = register("spell_set", new SpellSetBlock());
 

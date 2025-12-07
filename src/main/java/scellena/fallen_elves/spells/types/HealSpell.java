@@ -9,7 +9,7 @@ import scellena.fallen_elves.spells.SpellHelper;
 public class HealSpell extends SpellBase {
     @Override
     public boolean onRightClick() {
-        float amount = 2F + EntityCapabilityProvider.getEntityData(getOwner()).getCurrentLevel() * 0.1F;
+        float amount = (float) (2F * (1.0F + 0.02F * SpellHelper.getMending(getOwner())));
         if(getOwner() instanceof EntityLivingBase){
             ((EntityLivingBase) getOwner()).heal(amount);
             return true;

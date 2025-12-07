@@ -19,7 +19,7 @@ public abstract class SpellBase {
     }
 
     public double getXPGain(){
-        return getManaCost() + 100.0;
+        return getManaCost() + 50.0;
     }
 
     public boolean isAvailable(){

@@ -92,7 +92,7 @@ public class ContainerSpellSet extends Container {
             for(int j=0; j<18; j++){
                 ItemStack stack2 = tileEntity.getStackInSlot(i + 6);
                 if(stack2.isItemEqual(stack1)){
-                    tileEntity.setInventorySlotContents(i, stack1);
+                    tileEntity.setInventorySlotContents(i + 1, stack1);
                     stack2.setCount(stack2.getCount() - 1);
                     break;
                 }

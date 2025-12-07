@@ -8,7 +8,10 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import scellena.fallen_elves.FallenElves;
-import scellena.fallen_elves.entities.mobs.a.Elf;
+import scellena.fallen_elves.entities.mobs.mobs.BossGod;
+import scellena.fallen_elves.entities.mobs.mobs.BossLuminary;
+import scellena.fallen_elves.entities.mobs.mobs.Elf;
+import scellena.fallen_elves.entities.mobs.mobs.ElfHostile;
 import scellena.fallen_elves.entities.models.renderer.PlayerBasedRenderer;
 
 import java.util.ArrayList;
@@ -21,11 +24,18 @@ public class EntityHandler {
 
     public static void init(){
         register("elf", Elf.class);
+        register("elf_hostile", ElfHostile.class);
+        register("boss_luminary", BossLuminary.class);
+        register("boss_god", BossGod.class);
     }
 
     @SideOnly(Side.CLIENT)
     public static void registerModels(){
         playerEntityRender("elf", Elf.class, true);
+        playerEntityRender("elf", ElfHostile.class, true);
+
+        playerEntityRender("luminary", BossLuminary.class, true);
+        playerEntityRender("god", BossGod.class, true);
     }
 
     public static Class<? extends Entity> register(String name, Class<? extends Entity> entity){

@@ -15,7 +15,6 @@ public class PotionBase extends Potion {
         setPotionName(name);
         setRegistryName(new ResourceLocation(FallenElves.MOD_ID,name));
         PotionsHandler.potionList.add(this);
-        if(!badEffectIn) this.setBeneficial();
     }
 
     @Override

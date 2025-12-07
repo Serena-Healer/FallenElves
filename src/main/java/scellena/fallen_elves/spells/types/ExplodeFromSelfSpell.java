@@ -10,6 +10,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import scellena.fallen_elves.data.entity.EntityCapabilityProvider;
 import scellena.fallen_elves.spells.SpellBase;
+import scellena.fallen_elves.spells.SpellHelper;
 import scellena.fallen_elves.util.SkillUtils;
 
 public class ExplodeFromSelfSpell extends SpellBase {
@@ -26,7 +27,7 @@ public class ExplodeFromSelfSpell extends SpellBase {
     @Override
     public void onTick() {
         super.onTick();
-        float amount = 8F + EntityCapabilityProvider.getEntityData(getOwner()).getCurrentLevel() * 0.2F;
+        float amount = (float) (10F * (1.0F + 0.01F * SpellHelper.getMight(getOwner())));
         if(duration > 0) {
             duration--;
             double r = 20;
