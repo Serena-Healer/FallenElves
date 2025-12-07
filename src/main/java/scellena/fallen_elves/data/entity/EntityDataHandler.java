@@ -68,6 +68,7 @@ public class EntityDataHandler {
                 currentLevel = nbt.getInteger("level");
                 currentXP = nbt.getDouble("exp");
                 mana = nbt.getDouble("mana");
+                randomEventTick = nbt.getInteger("eventtick");
             }else{
                 reset();
             }
@@ -90,6 +91,7 @@ public class EntityDataHandler {
         nbt.setInteger("level", currentLevel);
         nbt.setDouble("exp", currentXP);
         nbt.setDouble("mana", mana);
+        nbt.setInteger("eventtick", randomEventTick);
         return nbt;
     }
 

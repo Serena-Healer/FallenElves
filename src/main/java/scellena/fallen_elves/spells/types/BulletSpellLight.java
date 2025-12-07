@@ -29,7 +29,7 @@ public class BulletSpellLight extends SpellBase {
     @Override
     public void onTick() {
         super.onTick();
-        float amount = (float) (4F * (1.0F + 0.02F * SpellHelper.getMight(getOwner())));
+        float amount = (float) (3F * (1.0F + 0.02F * SpellHelper.getMight(getOwner())));
         if(duration > 0) {
             for (int i = 0; i < 50; i++) {
                 position = position.add(direction.normalize().scale(0.1));

@@ -22,8 +22,9 @@ public class DecayEventHandler {
             Entity attackedIn = source.getTrueSource();
             if(attackedIn instanceof EntityLivingBase){
                 if(target instanceof EntityMob && !(target instanceof HostileMob)){
-                    if(((EntityLivingBase) attackedIn).getActivePotionEffect(PotionsHandler.ALLIANCE) != null) {
-                        attackedIn.attackEntityFrom(new DamageSource("alliance_violation"), 998244353);
+                    if(((EntityLivingBase) attackedIn).getActivePotionEffect(PotionsHandler.ALLIANCE_2) != null) {
+                        attackedIn.attackEntityFrom(new DamageSource("alliance_violation").setDamageBypassesArmor(), 998244353);
+                        ((EntityLivingBase) attackedIn).removeActivePotionEffect(PotionsHandler.ALLIANCE_2);
                     } else if(((EntityLivingBase) attackedIn).getActivePotionEffect(PotionsHandler.ALLIANCE) != null){
                         attackedIn.attackEntityFrom(DamageSource.WITHER, 2);
                         ((EntityLivingBase) attackedIn).addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 20 * 10, 0));

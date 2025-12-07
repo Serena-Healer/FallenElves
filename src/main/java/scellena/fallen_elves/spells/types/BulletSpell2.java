@@ -47,7 +47,7 @@ public class BulletSpell2 extends SpellBase {
                     break;
                 }
                 SkillUtils.playSoundFromServer(getOwner().world, position, SoundEvents.BLOCK_GLASS_BREAK, SoundCategory.PLAYERS, 0.2F, 1);
-                SkillUtils.spawnParticleFromServer(getOwner().world, position, EnumParticleTypes.DRAGON_BREATH, 1, 0, 0, 0, 0);
+                SkillUtils.spawnParticleFromServer(getOwner().world, position, EnumParticleTypes.SPELL_WITCH, 1, 0, 0, 0, 0);
             }
             duration--;
         }

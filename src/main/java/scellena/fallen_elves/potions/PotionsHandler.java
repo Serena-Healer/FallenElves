@@ -27,6 +27,7 @@ public class PotionsHandler {
 
     public static Potion register(Potion potion){
         potionList.add(potion);
+        ForgeRegistries.POTIONS.register(potion);
         return potion;
     }
 

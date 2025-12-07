@@ -3,10 +3,25 @@ item.wand_light.name=ひかりの杖
 item.sword_luminary.name=勇者の聖剣
 item.wand_knowledge.name=全知全能の杖
 item.spellbook.name=%Sの書
+item.material_elf.name=エルフの羽
+item.material_luminary.name=勇気のかたまり
+item.material_god.name=知力の輝石
 tile.spell_set.name=魔術作業台
+tile.magic_ore.name=マナストーン]
+item.magic_ingot.name=魔力の結晶
+item.mana_food1.name=エルフの実
+item.mana_food2.name=高位エルフの実
+item.mana_food3.name=長老エルフの実
+item.mana_food4.name=起源エルフの実
 
 spell.fallen_elves:bullet.name=暗黒弾
+spell.fallen_elves:bullet_2.name=漆黒弾
+spell.fallen_elves:bullet_area.name=衝撃弾
+spell.fallen_elves:explode.name=破滅の波動
 spell.fallen_elves:heal.name=ヒール
+spell.fallen_elves:heal_bullet.name=いやしの波動
+spell.fallen_elves:heal_area.name=エリアヒール
+spell.fallen_elves:shield.name=ダークバリア
 spell.fallen_elves:the_last.name=§kDestroyerTakahashi§r
 
 decay.overridden.activate=§5§l体が何かに乗っ取られているように感じた...。
@@ -27,7 +42,7 @@ decay.god.activate.2=§aとても残念ですが、世界を護るためには�
 decay.god.activate.3=§a闇は世界を闇に染め、また世界を滅ぼしうるもの。
 decay.god.activate.4=§aさあ、光の裁きを受けなさいっ！！
 
-death.alliance_violation=%s は自分の本能に背いた結果生きる意志を失った
+death.attack.alliance_violation=%s は自分の本能に背いた結果生きる意志を失った
 death.attack.light=%s は %s の光に消し去られた
 
 key.categories.fallen_elves=Fallen Elves

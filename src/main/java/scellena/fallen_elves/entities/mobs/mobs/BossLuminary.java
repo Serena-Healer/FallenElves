@@ -13,10 +13,13 @@ import scellena.fallen_elves.FallenElves;
 import scellena.fallen_elves.data.entity.EntityCapabilityProvider;
 import scellena.fallen_elves.entities.EntitySkillUtils;
 import scellena.fallen_elves.entities.ICustomEntity;
+import scellena.fallen_elves.entities.LootTableHandler;
 import scellena.fallen_elves.entities.mobs.templetes.HostileMob;
 import scellena.fallen_elves.items.ItemHandler;
 import scellena.fallen_elves.spells.SpellAttributes;
 import scellena.fallen_elves.util.SkillUtils;
+
+import javax.annotation.Nullable;
 
 public class BossLuminary extends HostileMob implements ICustomEntity{
 
@@ -65,6 +68,7 @@ public class BossLuminary extends HostileMob implements ICustomEntity{
             tick--;
             addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 2, 100, false, false));
             addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 2, 100, false, false));
+            addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 2, 100, false, false));
             if(tick <= 0) {
                 EntitySkillUtils.saySomething(this, "decay.luminary.activate." + (++messageStep));
                 tick = 60;
@@ -118,7 +122,19 @@ public class BossLuminary extends HostileMob implements ICustomEntity{
     @Override
     protected void applyEntityAttributes() {
         super.applyEntityAttributes();
+        SpellAttributes.init(this);
         this.getEntityAttribute(SpellAttributes.MAGICAL_MIGHT).setBaseValue(70);
         this.getEntityAttribute(SpellAttributes.MAGICAL_MENDING).setBaseValue(70);
+    }
+
+    @Override
+    protected boolean canDespawn() {
+        return false;
+    }
+
+    @Nullable
+    @Override
+    protected ResourceLocation getLootTable() {
+        return LootTableHandler.LUMINARY;
     }
 }

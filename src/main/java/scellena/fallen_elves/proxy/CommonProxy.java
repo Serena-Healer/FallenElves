@@ -102,7 +102,7 @@ public abstract class CommonProxy {
         BlockDecayHelper.initMap();
         System.out.println("Decaying Block Data inited");
 
-        GameRegistry.addSmelting(BlockHandler.ORE, new ItemStack(ItemHandler.INGOT), 3);
+        GameRegistry.addSmelting(BlockHandler.ORE, new ItemStack(ItemHandler.INGOT), 0.5F);
 
         System.out.println(FallenElves.MOD_NAME + " : Init took: " + (System.nanoTime() - startTime) + "ms.");
     }

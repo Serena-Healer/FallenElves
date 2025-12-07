@@ -4,6 +4,8 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import scellena.fallen_elves.items.consumables.ItemDebug;
+import scellena.fallen_elves.items.consumables.ItemExperience;
+import scellena.fallen_elves.items.consumables.ItemManaFood;
 import scellena.fallen_elves.items.spellbooks.ItemSpellbook;
 import scellena.fallen_elves.items.wands.ItemWand;
 import scellena.fallen_elves.spells.SpellRegistry;
@@ -30,6 +32,15 @@ public class ItemHandler {
         WAND_GOD = register("wand_knowledge", new ItemWand(3.0, 50.0, 50.0));
         SWORD_ENEMY = register("sword_luminary", new ItemWand(7.0, 5.0, 5.0));
 
+        register("material_elf", new ItemBase());
+        register("material_god", new ItemBase());
+        register("material_luminary", new ItemBase());
+
+        register("mana_food1", new ItemManaFood(1, 1, 100));
+        register("mana_food2", new ItemManaFood(1, 1, 300));
+        register("mana_food3", new ItemManaFood(1, 1, 1000));
+        register("mana_food4", new ItemManaFood(1, 1, 3000));
+
         for(SpellRegistry.SpellRegistryEntry entry : SpellRegistry.SPELLS){
             register("spellbook_" + entry.getRegistryName().getPath(), new ItemSpellbook(entry.getSpell()));
         }
@@ -37,6 +48,7 @@ public class ItemHandler {
         INGOT = register("magic_ingot", new ItemBase());
 
         register("debug", new ItemDebug());
+        register("debug_xp", new ItemExperience());
 
     }
 
