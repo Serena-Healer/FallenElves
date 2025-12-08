@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fallen_elves:planks",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fallen_elves:slab",
+    "data": 0,
+    "count": 6
+  }
+}

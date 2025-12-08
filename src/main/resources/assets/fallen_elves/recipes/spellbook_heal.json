@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spellbook",
+  "pattern": [
+    " B ",
+    "DAE",
+    " C "
+  ],
+  "key": {
+    "A": {
+      "item": "fallen_elves:book_material1",
+      "data": 0
+    },
+    "B": {
+      "item": "minecraft:gold_ingot",
+      "data": 0
+    },
+    "C": {
+      "item": "minecraft:apple",
+      "data": 0
+    },
+    "D": {
+      "item": "minecraft:leather",
+      "data": 0
+    },
+    "E": {
+      "item": "minecraft:carrot",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fallen_elves:spellbook_heal",
+    "data": 0,
+    "count": 1
+  }
+}

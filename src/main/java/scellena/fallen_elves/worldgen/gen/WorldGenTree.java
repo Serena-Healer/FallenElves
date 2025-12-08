@@ -28,7 +28,7 @@ public class WorldGenTree implements IWorldGenerator {
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
         if(world.provider.getDimension() == 0){
-            run(LOG_1, world, random, chunkX, chunkZ, 0.0003, 60, 128);
+            run(LOG_1, world, random, chunkX, chunkZ, 0.004, 60, 128);
         }
     }
 

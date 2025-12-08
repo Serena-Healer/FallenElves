@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spellbook",
+  "pattern": [
+    " B ",
+    "DAE",
+    " C "
+  ],
+  "key": {
+    "A": {
+      "item": "fallen_elves:book_material2",
+      "data": 0
+    },
+    "B": {
+      "item": "fallen_elves:material_luminary",
+      "data": 0
+    },
+    "C": {
+      "item": "minecraft:golden_apple",
+      "data": 1
+    },
+    "D": {
+      "item": "minecraft:diamond",
+      "data": 0
+    },
+    "E": {
+      "item": "minecraft:emerald",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fallen_elves:spellbook_heal_area",
+    "data": 0,
+    "count": 1
+  }
+}

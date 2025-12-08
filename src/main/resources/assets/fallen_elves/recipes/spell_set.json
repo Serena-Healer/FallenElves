@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spell_set",
+  "pattern": [
+    "  C",
+    "BBB",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "item": "fallen_elves:planks",
+      "data": 0
+    },
+    "B": {
+      "item": "fallen_elves:logs",
+      "data": 0
+    },
+    "C": {
+      "item": "minecraft:writable_book",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fallen_elves:spell_set",
+    "data": 0,
+    "count": 1
+  }
+}

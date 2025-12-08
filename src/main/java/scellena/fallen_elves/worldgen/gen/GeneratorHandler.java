@@ -8,8 +8,6 @@ public class GeneratorHandler {
     public static void init(){
         register(new WorldGenOres());
         register(new WorldGenModStructure());
-
-        //以下没
         register(new WorldGenTree());
         //register(new WorldGenFlower());
     }

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spellbook",
+  "pattern": [
+    " B ",
+    "DAE",
+    " C "
+  ],
+  "key": {
+    "A": {
+      "item": "fallen_elves:book_material2",
+      "data": 0
+    },
+    "B": {
+      "item": "fallen_elves:material_god",
+      "data": 0
+    },
+    "C": {
+      "item": "minecraft:diamond_block",
+      "data": 0
+    },
+    "D": {
+      "item": "minecraft:end_crystal",
+      "data": 0
+    },
+    "E": {
+      "item": "minecraft:end_crystal",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fallen_elves:spellbook_the_last",
+    "data": 0,
+    "count": 1
+  }
+}

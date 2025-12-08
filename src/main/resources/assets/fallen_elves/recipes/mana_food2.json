@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "materials",
+  "pattern": [
+    " B ",
+    "BAB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "fallen_elves:mana_food1",
+      "data": 0
+    },
+    "A": {
+      "item": "fallen_elves:material_elf",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fallen_elves:mana_food2",
+    "data": 0,
+    "count": 4
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spellbook",
+  "pattern": [
+    " B ",
+    "DAE",
+    " C "
+  ],
+  "key": {
+    "A": {
+      "item": "fallen_elves:book_material2",
+      "data": 0
+    },
+    "B": {
+      "item": "fallen_elves:material_luminary",
+      "data": 0
+    },
+    "C": {
+      "item": "minecraft:diamond_chestplate",
+      "data": 0
+    },
+    "D": {
+      "item": "minecraft:fermented_spider_eye",
+      "data": 0
+    },
+    "E": {
+      "item": "minecraft:sugar",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fallen_elves:spellbook_shield",
+    "data": 0,
+    "count": 1
+  }
+}

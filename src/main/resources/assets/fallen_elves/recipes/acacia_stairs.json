@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fallen_elves:planks",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fallen_elves:magic_stairs",
+    "data": 0,
+    "count": 4
+  }
+}

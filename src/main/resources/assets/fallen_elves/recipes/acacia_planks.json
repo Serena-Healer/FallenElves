@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "planks",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "fallen_elves:logs",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fallen_elves:planks",
+    "data": 0,
+    "count": 4
+  }
+}

@@ -35,6 +35,8 @@ public class ItemHandler {
         register("material_elf", new ItemBase());
         register("material_god", new ItemBase());
         register("material_luminary", new ItemBase());
+        register("book_material1", new ItemBase());
+        register("book_material2", new ItemBase());
 
         register("mana_food1", new ItemManaFood(1, 1, 100));
         register("mana_food2", new ItemManaFood(1, 1, 300));

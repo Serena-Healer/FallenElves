@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "materials",
+  "pattern": [
+    "CBC",
+    "BAB",
+    "CBC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:book",
+      "data": 0
+    },
+    "B": {
+      "item": "fallen_elves:magic_ingot",
+      "data": 0
+    },
+    "C": {
+      "item": "minecraft:glowstone_dust",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fallen_elves:book_material2",
+    "data": 0,
+    "count": 1
+  }
+}
