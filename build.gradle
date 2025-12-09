@@ -3,10 +3,10 @@ plugins {
 }
 
 group = 'scellena'
-version = '0.1'
+version = '0.1.0'
 
 java {
-    archivesBaseName = 'fallen_elves'
+    archivesBaseName = 'FallenElves-1.12.2'
     toolchain.languageVersion = JavaLanguageVersion.of(8)
 }
 
