@@ -33,6 +33,8 @@ spell.fallen_elves:heal.name=Heal
 spell.fallen_elves:heal_bullet.name=Healing Missile
 spell.fallen_elves:heal_area.name=Healing Area
 spell.fallen_elves:shield.name=Dark Barrier
+spell.fallen_elves:might.name=Concentration
+spell.fallen_elves:strength.name=Mutation
 spell.fallen_elves:the_last.name=§kDestroyerTakahashi§r
 
 decay.overridden.activate=§5§lYou started to feel like your body is overridden by something...。
@@ -45,7 +47,7 @@ entity.elf_hostile.name=Elf Mage
 entity.boss_luminary.name=Luminary Sevar
 entity.boss_god.name=God Espace
 
-decay.elf.activate=§dElf Mage「Sense of dark... Here! Everyone, never lose!
+decay.elf.activate=§dElf Mage: Sense of dark... Here! Everyone, never lose!
 decay.luminary.activate.1=§eYou have no place to escape, the one involved in dark power...!
 decay.luminary.activate.2=§eYou made a big sin. Your life ends by the light just now!
 decay.god.activate.1=§aYou are the one became a hand of the dark one.

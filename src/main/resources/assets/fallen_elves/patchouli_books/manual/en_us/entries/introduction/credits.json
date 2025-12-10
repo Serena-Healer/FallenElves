@@ -1,0 +1,16 @@
+{
+  "name": "創造者たち(クレジット)",
+  "icon": "minecraft:nether_star",
+  "category": "fallen_elves:introduction",
+  "pages": [
+    {
+      "type": "text",
+      "text": "企画・主制作: $(#008000)セーニャ$()$(br)一部テクスチャ: $(#000080)Farland1ng$()$(br)デバッグ: $(#800000)(未定)$()$(br)使用音源: $(#808000)効果音ラボ$()$(br)使用ライブラリ: $(#800040)Patchouli$()"
+    },
+    {
+      "type": "text",
+      "text": "このModは The 1.12 Coalition によるModコンテスト「2025 1.12 Mod Jam」応募作品です。1.12のModが好きだよ！って方はぜひお気軽にDiscordサーバーにお入りください！$(br)$(l:https://discord.gg/UnMQVbhZPS)https://discord.gg/UnMQVbhZPS$(/l)"
+    }
+  ],
+  "sortnum": 10000
+}

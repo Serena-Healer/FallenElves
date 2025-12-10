@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spellbook",
+  "pattern": [
+    " B ",
+    "DAE",
+    " C "
+  ],
+  "key": {
+    "A": {
+      "item": "fallen_elves:book_material1",
+      "data": 0
+    },
+    "B": {
+      "item": "fallen_elves:material_elf",
+      "data": 0
+    },
+    "C": {
+      "item": "minecraft:diamond_sword",
+      "data": 0
+    },
+    "D": {
+      "item": "minecraft:blaze_powder",
+      "data": 0
+    },
+    "E": {
+      "item": "minecraft:redstone_block",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fallen_elves:spellbook_strength",
+    "data": 0,
+    "count": 1
+  }
+}

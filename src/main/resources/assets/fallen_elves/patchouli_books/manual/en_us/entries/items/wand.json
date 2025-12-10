@@ -1,0 +1,15 @@
+{
+  "name": "杖",
+  "icon": "fallen_elves:wand",
+  "category": "fallen_elves:items",
+  "pages": [
+    {
+      "type": "text",
+      "text": "杖は魔法を使うために必要不可欠な補助具です。最初の杖は魔法の樹木と金で創ることができます。この世界にはより強い魔力を引き出せるようになる杖も存在するというので探してみましょう。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:beginner_wand"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ダークバリア",
+  "icon": "fallen_elves:spellbook_shield",
+  "category": "fallen_elves:spells",
+  "advancement": "fallen_elves:elf",
+  "pages": [
+    {
+      "type": "text",
+      "text": "魔力で結界を生成し自分の身にまといます。結界は魔力に応じた量の攻撃を防いでくれます。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:spellbook_shield"
+    }
+  ]
+}

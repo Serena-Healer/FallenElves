@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "fallen_elves:material_elf"
+        },
+        "title": {
+            "translate": "advancements.fallen_elves.elf.title"
+        },
+        "description": {
+            "translate": "advancements.fallen_elves.elf.description"
+        },
+        "hidden": true
+    },
+    "parent": "fallen_elves:root",
+    "criteria": {
+        "iron": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "fallen_elves:material_elf"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -7,6 +7,7 @@ import net.minecraft.init.MobEffects;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EntityDamageSource;
+import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import scellena.fallen_elves.entities.mobs.templetes.HostileMob;
@@ -34,6 +35,28 @@ public class DecayEventHandler {
                     }
                 }else {
                     ((EntityLivingBase) attackedIn).removeActivePotionEffect(PotionsHandler.KILL_DESIRE);
+                }
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public void onDamage(LivingDamageEvent event){
+        DamageSource source = event.getSource();
+        EntityLivingBase target = event.getEntityLiving();
+        if(source instanceof EntityDamageSource){
+            Entity attackedIn = source.getTrueSource();
+            if(attackedIn instanceof EntityLivingBase){
+                if(source.isMagicDamage()) {
+                    PotionEffect effect = ((EntityLivingBase) attackedIn).getActivePotionEffect(PotionsHandler.MIGHT);
+                    if(effect != null){
+                        event.setAmount(event.getAmount() * (1.0F + effect.getAmplifier() / 100.0F));
+                    }
+                }else{
+                    PotionEffect effect = ((EntityLivingBase) attackedIn).getActivePotionEffect(PotionsHandler.STRENGTH);
+                    if(effect != null){
+                        event.setAmount(event.getAmount() * (1.0F + effect.getAmplifier() / 100.0F));
+                    }
                 }
             }
         }

@@ -8,7 +8,10 @@ import net.minecraft.inventory.IContainerListener;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.SoundCategory;
+import scellena.fallen_elves.items.spellbooks.ItemSpellbook;
 import scellena.fallen_elves.items.wands.ItemWand;
+import scellena.fallen_elves.util.SkillUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -114,6 +117,8 @@ public class ContainerSpellSet extends Container {
                 ((ItemWand)stack.getItem()).saveStacks(stack, spellBooks);
             }
             emptySpellSlots();
+            SkillUtils.playSoundFromServer(player.player.world, player.player.getPositionVector(), SoundEvents.BLOCK_ANVIL_USE, SoundCategory.BLOCKS, 1, 2);
+            SkillUtils.playSoundFromServer(player.player.world, player.player.getPositionVector(), SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 1, 1);
         }
     }
 
@@ -169,6 +174,26 @@ public class ContainerSpellSet extends Container {
             }
         }
 
+        @Override
+        public boolean isItemValid(ItemStack stack) {
+            return super.isItemValid(stack) && stack.getItem() instanceof ItemWand;
+        }
+    }
+
+    public static class SlotSpell extends Slot {
+        public SlotSpell(IInventory inventoryIn, int index, int xPosition, int yPosition) {
+            super(inventoryIn, index, xPosition, yPosition);
+        }
+
+        @Override
+        public boolean isItemValid(ItemStack stack) {
+            return super.isItemValid(stack) && stack.getItem() instanceof ItemSpellbook;
+        }
+
+        @Override
+        public int getSlotStackLimit() {
+            return 1;
+        }
     }
 
 }

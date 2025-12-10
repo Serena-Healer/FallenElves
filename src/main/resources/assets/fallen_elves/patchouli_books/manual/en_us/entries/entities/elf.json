@@ -1,0 +1,21 @@
+{
+  "name": "エルフの戦士",
+  "icon": "fallen_elves:material_elf",
+  "category": "fallen_elves:entities",
+  "advancement": "fallen_elves:elf",
+  "pages": [
+    {
+      "type": "text",
+      "text": "この世界を生きるエルフの戦士たちです。エルフは知力と魔力にすぐれた種族であり、普段から魔法を使って生活の役に立てています。その中でもこの戦士たちは戦闘用の魔法を使いこなし、はびこる魔物などの退治に役立っています。"
+    },
+    {
+      "type": "text",
+      "text": "あなたから闇の力が感じられたのか、一部の戦士からは標的にされているようです。精度の高い光魔法で遠くからでも攻撃してきます。範囲攻撃や防御・回復魔法もうまく使って手早く倒しましょう。"
+    },
+    {
+      "type": "entity",
+      "entity": "fallen_elves:elf_hostile"
+    }
+  ],
+  "sortnum": 0
+}

@@ -33,12 +33,14 @@ spell.fallen_elves:heal.name=ヒール
 spell.fallen_elves:heal_bullet.name=いやしの波動
 spell.fallen_elves:heal_area.name=エリアヒール
 spell.fallen_elves:shield.name=ダークバリア
+spell.fallen_elves:might.name=魔力集中
+spell.fallen_elves:strength.name=魔力変異
 spell.fallen_elves:the_last.name=§kDestroyerTakahashi§r
 
 decay.overridden.activate=§5§l体が何かに乗っ取られているように感じた...。
 decay.hostile.activate=§5§l動物や人間を襲いたい衝動に駆られ始めた...！
 decay.alliance.activate=§5§l魔物たちが同胞のように感じられるようになった...！
-decay.alliance_2.activate=§5§l「魔物たちは真に「仲間」であり、決して殺してはならない...！」
+decay.alliance_2.activate=§5§l: 魔物たちは真に「仲間」であり、決して殺してはならない...！」
 
 entity.elf.name=エルフの少女
 entity.elf_hostile.name=エルフの戦士

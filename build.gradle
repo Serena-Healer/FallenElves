@@ -89,6 +89,7 @@ repositories {
         name = "Progwml6 maven"
         url = "https://dvs1.progwml6.com/files/maven/"
     }
+    maven { url 'https://maven.blamejared.com' }
 }
 
 dependencies {
@@ -104,10 +105,7 @@ dependencies {
 
     // Examples using mod jars from ./libs
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
-    implementation(files("lib/Baubles-1.12-1.5.2-api.jar"))
-
-    // compile against the JEI API but do not include it at runtime
-    implementation "mezz.jei:jei_${mc_version}:${jei_version}:api"
+    //implementation(files("lib/Baubles-1.12-1.5.2-api.jar"))
 
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html

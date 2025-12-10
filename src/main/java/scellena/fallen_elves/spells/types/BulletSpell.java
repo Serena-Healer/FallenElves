@@ -38,7 +38,7 @@ public class BulletSpell extends SpellBase {
                 int hit = 0;
                 for (EntityLivingBase entity : SkillUtils.getEnemiesInArea(getOwner().world, position, 1)) {
                     hit++;
-                    entity.attackEntityFrom(new EntityDamageSource("wither", getOwner()), amount);
+                    entity.attackEntityFrom(new EntityDamageSource("wither", getOwner()).setMagicDamage(), amount);
                 }
                 IBlockState state = getOwner().world.getBlockState(new BlockPos(position));
                 if(state.getBlock().canCollideCheck(state, false)) hit++;

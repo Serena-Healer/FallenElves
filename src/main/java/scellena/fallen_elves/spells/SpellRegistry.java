@@ -21,6 +21,8 @@ public class SpellRegistry {
         SPELLS.register(new SpellRegistryEntry(AreaHealSpell.class, new ResourceLocation(FallenElves.MOD_ID, "heal_area")));
 
         SPELLS.register(new SpellRegistryEntry(ShieldSpell.class, new ResourceLocation(FallenElves.MOD_ID, "shield")));
+        SPELLS.register(new SpellRegistryEntry(StrengthSpell.class, new ResourceLocation(FallenElves.MOD_ID, "strength")));
+        SPELLS.register(new SpellRegistryEntry(MightSpell.class, new ResourceLocation(FallenElves.MOD_ID, "might")));
 
         SPELLS.register(new SpellRegistryEntry(TheLastSpell.class, new ResourceLocation(FallenElves.MOD_ID, "the_last")));
 

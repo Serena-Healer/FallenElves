@@ -18,11 +18,16 @@ public class PotionsHandler {
     public static Potion ALLIANCE;
     public static Potion ALLIANCE_2;
 
+    public static Potion MIGHT;
+    public static Potion STRENGTH;
+
     public static void init(){
         potionList.forEach(ForgeRegistries.POTIONS::register);
         KILL_DESIRE = register(new PotionBase("kill_desire", Integer.parseInt("400040", 16), true));
         ALLIANCE = register(new PotionBase("alliance", Integer.parseInt("400040", 16), true));
         ALLIANCE_2 = register(new PotionBase("alliance_2", Integer.parseInt("400040", 16), true));
+        MIGHT = register(new PotionBase("might", Integer.parseInt("ff0000", 16), false));
+        STRENGTH = register(new PotionBase("strength", Integer.parseInt("ff00ff", 16), false));
     }
 
     public static Potion register(Potion potion){

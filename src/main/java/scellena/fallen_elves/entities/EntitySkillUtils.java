@@ -29,7 +29,7 @@ public class EntitySkillUtils {
             entity.getEntityWorld().getEntities(EntityPlayer.class, entityPlayer -> true).forEach(e -> {
                 if (e != null && entity.getDistance(e) <= 50) {
                     if(I18n.canTranslate(str)) {
-                        e.sendMessage(new TextComponentString(entity.getDisplayName().getUnformattedText() + "「").appendSibling(new TextComponentTranslation(str)));
+                        e.sendMessage(new TextComponentString(entity.getDisplayName().getUnformattedText() + ": ").appendSibling(new TextComponentTranslation(str)));
                     }else{
                         System.out.println("Translation key " + str + " not found, skipping");
                         System.out.println("(This may be an intended when the mob won't speak)");

@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "fallen_elves:grass"
+        },
+        "title": {
+            "translate": "advancements.fallen_elves.finish.title"
+        },
+        "description": {
+            "translate": "advancements.fallen_elves.finish.description"
+        },
+        "frame": "goal",
+        "hidden": true
+    },
+    "parent": "fallen_elves:god",
+    "criteria": {
+        "iron": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

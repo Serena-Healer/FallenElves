@@ -1,0 +1,16 @@
+{
+  "name": "衝撃弾",
+  "icon": "fallen_elves:spellbook_bullet_area",
+  "category": "fallen_elves:spells",
+  "advancement": "fallen_elves:elf",
+  "pages": [
+    {
+      "type": "text",
+      "text": "より高度な詠唱で闇の力を放ち、着弾点に衝撃波を引き起こし範囲内の敵にダメージを与えます。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:spellbook_bullet3"
+    }
+  ]
+}

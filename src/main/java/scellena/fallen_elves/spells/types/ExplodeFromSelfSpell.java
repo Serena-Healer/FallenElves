@@ -38,7 +38,7 @@ public class ExplodeFromSelfSpell extends SpellBase {
                 SkillUtils.playSoundFromServer(getOwner().world, position, SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.PLAYERS, 1, 0.5F);
                 SkillUtils.spawnParticleFromServer(getOwner().world, position, EnumParticleTypes.EXPLOSION_LARGE, 50, 4, 4, 4, 0);
                 for (EntityLivingBase entity : SkillUtils.getEnemiesInArea(getOwner().world, position, (float) r)) {
-                    entity.attackEntityFrom(new EntityDamageSource("wither", getOwner()), amount);
+                    entity.attackEntityFrom(new EntityDamageSource("wither", getOwner()).setMagicDamage(), amount);
                 }
             }
         }

@@ -4,21 +4,20 @@ import com.google.common.collect.Multimap;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.*;
 import net.minecraft.world.World;
 import scellena.fallen_elves.items.ItemBase;
 import scellena.fallen_elves.items.spellbooks.ItemSpellbook;
 import scellena.fallen_elves.spells.SpellAttributes;
 import scellena.fallen_elves.spells.SpellBase;
 import scellena.fallen_elves.spells.SpellHelper;
+import scellena.fallen_elves.util.SkillUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -61,10 +60,15 @@ public class ItemWand extends ItemBase {
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         ItemStack stack = playerIn.getHeldItem(handIn);
         SpellBase spell = getSetSpell(playerIn, stack);
-        if(spell != null && spell.isAvailable()){
-            if(spell.onRightClick()){
-                SpellHelper.onFinishSpell(playerIn, spell);
-            };
+        if(spell != null) {
+            if (spell.isAvailable()) {
+                if (spell.onRightClick()) {
+                    SpellHelper.onFinishSpell(playerIn, spell);
+                }
+                ;
+            }else{
+                SkillUtils.playSoundFromServer(worldIn, playerIn.getPositionVector(), SoundEvents.ENTITY_GENERIC_EXTINGUISH_FIRE, SoundCategory.PLAYERS, 1, 1);
+            }
         }
         return super.onItemRightClick(worldIn, playerIn, handIn);
     }
