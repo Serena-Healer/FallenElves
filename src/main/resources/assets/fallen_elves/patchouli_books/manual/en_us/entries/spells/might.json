@@ -2,7 +2,7 @@
   "name": "魔力集中",
   "icon": "fallen_elves:spellbook_might",
   "category": "fallen_elves:spells",
-  "advancement": "fallen_elves:elf",
+  "advancement": "fallen_elves:luminary",
   "pages": [
     {
       "type": "text",

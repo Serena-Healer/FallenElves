@@ -20,10 +20,10 @@ public class SpellHelper {
      * @return 経験値差分
      */
     public static double getXPRequired(int level){
-        if(level == 2) return 200;
-        if(level == 3) return 700;
-        if(level == 4) return 1500;
-        if(level == 5) return 2500;
+        if(level == 1) return 200;
+        if(level == 2) return 700;
+        if(level == 3) return 1500;
+        if(level == 4) return 2500;
         return Math.pow(1.05, level) * 5000;
     }
 

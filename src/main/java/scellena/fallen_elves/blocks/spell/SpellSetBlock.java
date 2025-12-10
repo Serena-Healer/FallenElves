@@ -28,7 +28,7 @@ public class SpellSetBlock extends BlockBase implements IBlockWithTileEntity, IT
     protected static final AxisAlignedBB AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.75D, 1.0D);
 
     public SpellSetBlock() {
-        super(Material.ROCK);
+        super(Material.WOOD);
         setHardness(5);
         setLightLevel(15);
     }

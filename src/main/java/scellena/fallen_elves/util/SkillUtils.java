@@ -1,5 +1,6 @@
 package scellena.fallen_elves.util;
 
+import com.google.common.base.Predicates;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -27,7 +28,7 @@ public class SkillUtils {
 
     public static List<EntityLivingBase> getEntitiesInArea(World world, Vec3d location, float distance){
         List<EntityLivingBase> list = new ArrayList<>();
-        world.getLoadedEntityList().forEach(e -> {
+        world.getEntities(EntityLivingBase.class, Predicates.alwaysTrue()).forEach(e -> {
             if(e instanceof EntityLivingBase){
                 if(e.getEntityWorld() == world && getDistanceFromBox(location, e.getEntityBoundingBox()) <= distance){
                     list.add((EntityLivingBase) e);

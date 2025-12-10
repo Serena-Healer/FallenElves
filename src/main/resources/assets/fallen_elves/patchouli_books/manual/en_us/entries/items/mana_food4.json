@@ -1,0 +1,16 @@
+{
+  "name": "起源エルフの実",
+  "icon": "fallen_elves:mana_food4",
+  "category": "fallen_elves:items",
+  "advancement": "fallen_elves:god",
+  "pages": [
+    {
+      "type": "text",
+      "text": "世界を創った最初のエルフが使っていた実といわれており、神の力でなければ創り出すことはできないとされています。$(br)食べると自身の魔力を極めて大きく回復します。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:mana_food4"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "name": "ダークバリア",
   "icon": "fallen_elves:spellbook_shield",
   "category": "fallen_elves:spells",
-  "advancement": "fallen_elves:elf",
+  "advancement": "fallen_elves:luminary",
   "pages": [
     {
       "type": "text",

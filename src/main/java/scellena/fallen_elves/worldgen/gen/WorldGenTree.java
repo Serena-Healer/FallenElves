@@ -28,13 +28,13 @@ public class WorldGenTree implements IWorldGenerator {
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
         if(world.provider.getDimension() == 0){
-            run(LOG_1, world, random, chunkX, chunkZ, 0.004, 60, 128);
+            run(LOG_1, world, random, chunkX, chunkZ, 0.01, 60, 128);
         }
     }
 
     public void run(WorldGenerator gen, World world, Random rand, int x, int z, double chance, int minHeight, int maxHeight) {
         int heightD = maxHeight - minHeight + 1;
-        for(int i=0; i<chance + Math.random(); i++){
+        for(int i=0; i<((int)(chance + rand.nextDouble())); i++){
             int bx = x * 16 + rand.nextInt(16);
             int bz = z * 16 + rand.nextInt(16);
             int by = world.getHeight(bx, bz);

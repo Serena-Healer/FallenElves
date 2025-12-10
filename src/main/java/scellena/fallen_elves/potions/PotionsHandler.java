@@ -14,6 +14,8 @@ public class PotionsHandler {
 
     public static List<Potion> potionList = new ArrayList<>();
 
+    public static Potion DECAY_1;
+    public static Potion END;
     public static Potion KILL_DESIRE;
     public static Potion ALLIANCE;
     public static Potion ALLIANCE_2;
@@ -26,6 +28,8 @@ public class PotionsHandler {
         KILL_DESIRE = register(new PotionBase("kill_desire", Integer.parseInt("400040", 16), true));
         ALLIANCE = register(new PotionBase("alliance", Integer.parseInt("400040", 16), true));
         ALLIANCE_2 = register(new PotionBase("alliance_2", Integer.parseInt("400040", 16), true));
+        DECAY_1 = register(new PotionBase("decay", Integer.parseInt("400040", 16), true));
+        END = register(new PotionBase("end", Integer.parseInt("400040", 16), true));
         MIGHT = register(new PotionBase("might", Integer.parseInt("ff0000", 16), false));
         STRENGTH = register(new PotionBase("strength", Integer.parseInt("ff00ff", 16), false));
     }

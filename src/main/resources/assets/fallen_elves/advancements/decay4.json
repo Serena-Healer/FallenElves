@@ -1,24 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "fallen_elves:decay_grass"
+            "item": "fallen_elves:material_elf"
         },
         "title": {
-            "translate": "advancements.fallen_elves.finish.title"
+            "translate": "advancements.fallen_elves.decay4.title"
         },
         "description": {
-            "translate": "advancements.fallen_elves.finish.description"
+            "translate": "advancements.fallen_elves.decay4.description"
         },
-        "frame": "challenge",
         "hidden": true
     },
-    "parent": "fallen_elves:god",
+    "parent": "fallen_elves:decay3",
     "criteria": {
         "all_effects": {
             "trigger": "minecraft:effects_changed",
             "conditions": {
                 "effects": {
-                    "fallen_elves:end": {}
+                    "fallen_elves:alliance_2": {}
                 }
             }
         }

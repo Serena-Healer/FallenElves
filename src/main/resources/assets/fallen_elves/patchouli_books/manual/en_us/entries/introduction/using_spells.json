@@ -9,8 +9,13 @@
     },
     {
       "type": "crafting",
-      "recipe": "fallen_elves:wand",
+      "recipe": "fallen_elves:beginner_wand",
       "recipe2": "fallen_elves:spell_set"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:spellbook_bullet",
+      "recipe2": "fallen_elves:spellbook_heal"
     },
     {
       "type": "text",

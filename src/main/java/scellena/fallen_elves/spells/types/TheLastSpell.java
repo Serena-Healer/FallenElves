@@ -1,10 +1,14 @@
 package scellena.fallen_elves.spells.types;
 
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.text.TextComponentTranslation;
 import scellena.fallen_elves.data.entity.EntityCapabilityProvider;
 import scellena.fallen_elves.decay.BlockDecayHelper;
+import scellena.fallen_elves.potions.PotionsHandler;
 import scellena.fallen_elves.spells.SpellBase;
 
 public class TheLastSpell extends SpellBase {
@@ -39,6 +43,25 @@ public class TheLastSpell extends SpellBase {
                         }
                     }
                 }
+            }
+        }
+        if(tick == 100){
+            getOwner().sendMessage(new TextComponentTranslation("spell.fallen_elves:the_last.msg1"));
+        }
+        if(tick == 200){
+            getOwner().sendMessage(new TextComponentTranslation("spell.fallen_elves:the_last.msg2"));
+        }
+        if(tick == 300){
+            getOwner().sendMessage(new TextComponentTranslation("spell.fallen_elves:the_last.msg3"));
+        }
+        if(tick == 400){
+            getOwner().sendMessage(new TextComponentTranslation("spell.fallen_elves:the_last.msg4"));
+            getOwner().sendMessage(new TextComponentTranslation("spell.fallen_elves:the_last.msg5"));
+            getOwner().sendMessage(new TextComponentTranslation("spell.fallen_elves:the_last.msg6"));
+            getOwner().sendMessage(new TextComponentTranslation("spell.fallen_elves:the_last.msg7"));
+            getOwner().sendMessage(new TextComponentTranslation("spell.fallen_elves:the_last.msg8"));
+            if(getOwner() instanceof EntityLivingBase){
+                ((EntityLivingBase) getOwner()).addPotionEffect(new PotionEffect(PotionsHandler.END, 20 * 10, 0));
             }
         }
     }

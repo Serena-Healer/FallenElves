@@ -1,0 +1,16 @@
+{
+  "name": "上級エルフの実",
+  "icon": "fallen_elves:mana_food2",
+  "category": "fallen_elves:items",
+  "advancement": "fallen_elves:elf",
+  "pages": [
+    {
+      "type": "text",
+      "text": "エルフの実の中でも特に魔力の強いもので、普通の実では魔力が足りない上級魔法使いが愛用しています。$(br)食べるとマナをそこそこ回復します。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:mana_food2"
+    }
+  ]
+}

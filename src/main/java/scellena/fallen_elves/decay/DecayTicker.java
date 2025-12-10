@@ -40,7 +40,7 @@ public class DecayTicker {
         }
 
         Random random = new Random();
-        if(tick == 0 && level >= 5){
+        if(tick <= 0 && level >= 5){
             boolean ac = false;
             while(!ac) {
                 ac = true;
@@ -58,6 +58,7 @@ public class DecayTicker {
                         living.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 * 60, 0));
                         living.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 20 * 60, 0));
                         living.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 20 * 10, 0));
+                        living.addPotionEffect(new PotionEffect(PotionsHandler.DECAY_1, 20 * 60, 0));
                         break;
                     case 1:
                         key = "decay.hostile.activate";
@@ -115,9 +116,7 @@ public class DecayTicker {
                     entity.sendMessage(text);
                 }
             }
-        }
-        if(tick < 0 && level >= 5){
-            data.setRandomEventTick((int) ((random.nextDouble() * 0.4 + 0.8) * (20 * 60 * Math.max(5, 35 - level))));
+            data.setRandomEventTick((int) ((random.nextDouble() * 0.4 + 0.8) * (20 * 30 * Math.max(10, 40 - level))));
         }
     }
 

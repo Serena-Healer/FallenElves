@@ -16,6 +16,7 @@ public class BlockMagicOre extends BlockOre implements IBlockBase {
 
     public BlockMagicOre(){
         super();
+        setHarvestLevel("pickaxe", 2);
         setHardness(3);
     }
 

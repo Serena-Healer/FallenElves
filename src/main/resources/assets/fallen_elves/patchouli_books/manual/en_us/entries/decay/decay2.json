@@ -1,0 +1,12 @@
+{
+  "name": "仲間意識",
+  "icon": "fallen_elves:material_elf",
+  "category": "fallen_elves:decay",
+  "advancement": "fallen_elves:decay2",
+  "pages": [
+    {
+      "type": "text",
+      "text": "意志を闇に侵され始め、闇の使いである魔族を倒すことに抵抗を感じます。効果中敵Mobを倒すと少しの間デバフを受けるようになります。$(br2)発生レベル: $(#808)10"
+    }
+  ]
+}

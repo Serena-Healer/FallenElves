@@ -9,6 +9,7 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import scellena.fallen_elves.blocks.BlockHandler;
+import scellena.fallen_elves.entities.mobs.templetes.HostileMob;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -40,7 +41,7 @@ public class BlockDecayHelper {
     public static void onWorldTick(World worldIn){
         for(EntityLivingBase entity : worldIn.getEntities(EntityLivingBase.class, (e -> true))){
             Block block = entity.getEntityWorld().getBlockState(entity.getPosition().add(0, -0.5, 0)).getBlock();
-            if(canInflictDecay(block) && !(entity instanceof EntityMob)){
+            if(canInflictDecay(block) && !(entity instanceof EntityMob && !(entity instanceof HostileMob))){
                 entity.attackEntityFrom(DamageSource.WITHER, 1);
             }
 

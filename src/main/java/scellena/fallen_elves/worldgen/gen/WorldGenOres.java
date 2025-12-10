@@ -18,7 +18,7 @@ public class WorldGenOres implements IWorldGenerator {
 
     public WorldGenOres(){
         super();
-        ORE_ARMOR_GEN = new WorldGenMinable(BlockHandler.ORE.getDefaultState(), 3);
+        ORE_ARMOR_GEN = new WorldGenMinable(BlockHandler.ORE.getDefaultState(), 5);
     }
 
     @Override

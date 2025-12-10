@@ -37,6 +37,15 @@ spell.fallen_elves:might.name=魔力集中
 spell.fallen_elves:strength.name=魔力変異
 spell.fallen_elves:the_last.name=§kDestroyerTakahashi§r
 
+spell.fallen_elves:the_last.msg1=§c邪神の器となってしまったあなたは、自身の手で世界を闇に染め、生きとし生けるものを滅ぼしてしまいました。
+spell.fallen_elves:the_last.msg2=§c魔力は得れば得るほど強くなるものですが、同時に邪神に体を蝕まれていったのであります。
+spell.fallen_elves:the_last.msg3=§c§lThe more you have, the worse it gets.
+spell.fallen_elves:the_last.msg4=§7Fallen Elves
+spell.fallen_elves:the_last.msg5=§7企画・制作 ScellenaHealer
+spell.fallen_elves:the_last.msg6=§7協賛: The 1.12 Coalition
+spell.fallen_elves:the_last.msg7=§8より詳細なクレジットは入門書から確認できます。
+spell.fallen_elves:the_last.msg8=§aThank you for playing!
+
 decay.overridden.activate=§5§l体が何かに乗っ取られているように感じた...。
 decay.hostile.activate=§5§l動物や人間を襲いたい衝動に駆られ始めた...！
 decay.alliance.activate=§5§l魔物たちが同胞のように感じられるようになった...！
@@ -64,4 +73,22 @@ key.back_skill=前の魔法に切り替え
 
 attribute.name.fallen_elves:mana=最大MP
 attribute.name.fallen_elves:magical_might=こうげき魔力
-attribute.name.fallen_elves:magical_mending=かいふく魔力
+
+advancements.fallen_elves.root.title=Fallen Elves
+advancements.fallen_elves.root.description=禁断の魔術に手を染めしエルフの物語
+advancements.fallen_elves.elf.title=邪神の手下
+advancements.fallen_elves.elf.description=エルフの戦士たちと戦う
+advancements.fallen_elves.luminary.title=光への抵抗
+advancements.fallen_elves.luminary.description=勇者セーヴァを討つ
+advancements.fallen_elves.god.title=神殺し
+advancements.fallen_elves.god.description=創世神エスパースを滅ぼす
+advancements.fallen_elves.finish.title=終焉をもたらす者
+advancements.fallen_elves.finish.description=邪神の器となり、自らの手で世界を滅ぼす
+advancements.fallen_elves.decay1.title=闇に手を染めし者
+advancements.fallen_elves.decay1.description=闇の力に手を染め始め、異変を感じる
+advancements.fallen_elves.decay2.title=魔族の同胞
+advancements.fallen_elves.decay2.description=闇に対する仲間意識を持つ
+advancements.fallen_elves.decay3.title=身を闇に委ねし者
+advancements.fallen_elves.decay3.description=破壊衝動を感じ始める
+advancements.fallen_elves.decay4.title=魔族
+advancements.fallen_elves.decay4.description=闇に対するさらに強い仲間意識を持つattribute.name.fallen_elves:magical_mending
