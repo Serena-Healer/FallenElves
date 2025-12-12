@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "text",
-      "text": "Some thinks you started to wear dark power, and horde of $(l:entities/elf)Elf mages(/l) starts to raid. The higher your level is, the more elves joins the raid.$(br2)Starting from level $(#808)10"
+      "text": "Some thinks you started to wear dark power, and horde of $(l:entities/elf)Elf mages$(/l) starts to raid. The higher your level is, the more elves joins the raid.$(br2)Starting from level $(#808)10"
     }
   ]
 }

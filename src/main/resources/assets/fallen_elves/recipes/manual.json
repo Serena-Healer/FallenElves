@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:book",
+      "data": 0
+    },
+    {
+      "item": "fallen_elves:logs",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "fallen_elves:manual_getter",
+    "data": 0,
+    "count": 1
+  },
+  "book": ""
+}

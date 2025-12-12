@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'scellena'
-version = '0.3.0'
+version = '1.0.0'
 
 java {
     archivesBaseName = 'FallenElves-1.12.2'

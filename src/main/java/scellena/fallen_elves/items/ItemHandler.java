@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import scellena.fallen_elves.items.consumables.ItemDebug;
 import scellena.fallen_elves.items.consumables.ItemExperience;
 import scellena.fallen_elves.items.consumables.ItemManaFood;
+import scellena.fallen_elves.items.consumables.ItemManualGetter;
 import scellena.fallen_elves.items.spellbooks.ItemSpellbook;
 import scellena.fallen_elves.items.wands.ItemWand;
 import scellena.fallen_elves.spells.SpellRegistry;
@@ -38,6 +39,7 @@ public class ItemHandler {
         register("book_material1", new ItemBase());
         register("book_material2", new ItemBase());
 
+        register("manual_getter", new ItemManualGetter());
         register("mana_food1", new ItemManaFood(1, 1, 100));
         register("mana_food2", new ItemManaFood(1, 1, 300));
         register("mana_food3", new ItemManaFood(1, 1, 1000));

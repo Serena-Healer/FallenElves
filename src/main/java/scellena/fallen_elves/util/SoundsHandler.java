@@ -7,7 +7,6 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import scellena.fallen_elves.FallenElves;
 
-@SideOnly(Side.CLIENT)
 public class SoundsHandler {
 
     public static SoundEvent LEVEL;

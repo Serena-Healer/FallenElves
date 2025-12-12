@@ -24,6 +24,10 @@ item.mana_food3.name=Elder Elf Fruit
 item.mana_food4.name=Origin Elf Fruit
 item.book_material1.name=Empty Spellbook
 item.book_material2.name=Empty Apprentice Spellbook
+item.manual_getter.name=Elven manual
+item.manual_getter.desc1=Using this item gives you the manual.
+item.manual_getter.desc2=(Since it is impossible to make direct manual recipe so this item connects both items)
+item.manual_getter.error=§cPatchouli is not installed!
 
 spell.fallen_elves:bullet.name=Black Missile
 spell.fallen_elves:bullet_2.name=Dark Missile
