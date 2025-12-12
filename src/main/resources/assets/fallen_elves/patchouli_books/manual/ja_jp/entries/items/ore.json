@@ -1,0 +1,19 @@
+{
+  "name": "魔力の結晶",
+  "icon": "fallen_elves:magic_ingot",
+  "category": "fallen_elves:items",
+  "pages": [
+    {
+      "type": "text",
+      "text": "魔力の結晶はその名の通り世界に満ちた魔力が地下で結晶化したものです。地下深くで採掘するとマナストーンと呼ばれる鉱石が見つかり、製錬することで魔力の結晶を精製できます。"
+    },
+    {
+      "type": "spotlight",
+      "item": "fallen_elves:magic_ingot"
+    },
+    {
+      "type": "spotlight",
+      "item": "fallen_elves:magic_ore"
+    }
+  ]
+}

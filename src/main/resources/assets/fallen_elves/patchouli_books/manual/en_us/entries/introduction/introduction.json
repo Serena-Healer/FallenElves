@@ -1,11 +1,11 @@
 {
-  "name": "はじめに",
+  "name": "Introduction",
   "icon": "minecraft:writable_book",
   "category": "fallen_elves:introduction",
   "pages": [
     {
       "type": "text",
-      "text": "このModはエルフたちの中で「禁じられた」魔法を解放し、魔法レベルを上げていくシステムを組み込んだ魔術Modです。$(br2)ただし、「禁じられた」魔法を使っていくと...?"
+      "text": "This is a magic mod that you can use \"forbidden\" magics among elves and leveling your magic power.$(br2)How ever, if you continue to use \"forbidden\" spells...?"
     }
   ],
   "sortnum": 0

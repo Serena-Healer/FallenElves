@@ -1,16 +1,17 @@
 {
-  "name": "起源エルフの実",
+  "name": "Origin Elf Fruit",
   "icon": "fallen_elves:mana_food4",
   "category": "fallen_elves:items",
   "advancement": "fallen_elves:god",
   "pages": [
     {
       "type": "text",
-      "text": "世界を創った最初のエルフが使っていた実といわれており、神の力でなければ創り出すことはできないとされています。$(br)食べると自身の魔力を極めて大きく回復します。"
+      "text": "It is said to be used by the very first elf who created the world and can only be made by the god.$(br)Consume to recover mana for huge amount!"
     },
     {
       "type": "crafting",
       "recipe": "fallen_elves:mana_food4"
     }
-  ]
+  ],
+  "sortnum": 14
 }

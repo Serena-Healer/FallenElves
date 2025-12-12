@@ -1,16 +1,17 @@
 {
-  "name": "上級エルフの実",
+  "name": "High Elf Fruit",
   "icon": "fallen_elves:mana_food2",
   "category": "fallen_elves:items",
   "advancement": "fallen_elves:elf",
   "pages": [
     {
       "type": "text",
-      "text": "エルフの実の中でも特に魔力の強いもので、普通の実では魔力が足りない上級魔法使いが愛用しています。$(br)食べるとマナをそこそこ回復します。"
+      "text": "Elf fruit which contains higher amount of mana, used by stronger mages who cannot cover their cost by normal fruits.$(br)Consume to recover mana for medium amount."
     },
     {
       "type": "crafting",
       "recipe": "fallen_elves:mana_food2"
     }
-  ]
+  ],
+  "sortnum": 12
 }

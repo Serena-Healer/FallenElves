@@ -6,12 +6,12 @@
   "pages": [
     {
       "type": "text",
-      "text": "この世界において真に禁忌とされている魔法で、とても強大な魔力を持つ人にしか扱えません。魔力を一気に解き放ち、$(k)世界のすべてを滅ぼし、闇の力で覆いつくします。"
+      "text": "This spell is said to be the truly forbidden and can only be used by a mage with master of spells. Release the power at once and $(k)demolish everything in the world and covers it by dark power."
     },
     {
       "type": "crafting",
       "recipe": "fallen_elves:spellbook_last",
-      "text": "$(#f00)もし世界を冒険し続けたいなら、この魔法を使う前にバックアップをとっておくことを強く推奨します！"
+      "text": "$(#f00)If you want to continue the adventure, make sure you make backup of the world!"
     }
   ]
 }

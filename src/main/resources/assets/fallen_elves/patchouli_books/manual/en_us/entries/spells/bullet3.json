@@ -1,12 +1,12 @@
 {
-  "name": "衝撃弾",
+  "name": "Great Missile",
   "icon": "fallen_elves:spellbook_bullet_area",
   "category": "fallen_elves:spells",
   "advancement": "fallen_elves:elf",
   "pages": [
     {
       "type": "text",
-      "text": "より高度な詠唱で闇の力を放ち、着弾点に衝撃波を引き起こし範囲内の敵にダメージを与えます。"
+      "text": "Sophisticated spellcasting allows to shoot dark power and deal damages to all entities in a area from where the bullet hit."
     },
     {
       "type": "crafting",

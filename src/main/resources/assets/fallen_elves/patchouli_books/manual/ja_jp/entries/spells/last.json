@@ -1,0 +1,17 @@
+{
+  "name": "???",
+  "icon": "fallen_elves:spellbook_the_last",
+  "category": "fallen_elves:spells",
+  "advancement": "fallen_elves:god",
+  "pages": [
+    {
+      "type": "text",
+      "text": "この世界において真に禁忌とされている魔法で、とても強大な魔力を持つ人にしか扱えません。魔力を一気に解き放ち、$(k)世界のすべてを滅ぼし、闇の力で覆いつくします。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:spellbook_last",
+      "text": "$(#f00)もし世界を冒険し続けたいなら、この魔法を使う前にバックアップをとっておくことを強く推奨します！"
+    }
+  ]
+}

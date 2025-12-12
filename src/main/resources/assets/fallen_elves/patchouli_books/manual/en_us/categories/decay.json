@@ -1,6 +1,6 @@
 {
-  "name": "邪神の介入",
-  "description": "呪文による邪神の介入に関する章です。",
+  "name": "Intervention by the Dark One",
+  "description": "This chapter describes the intervention randomly happens.$(br)Higher level causes the events more frequently. Starting from level 10, bosses may spawn.",
   "icon": "minecraft:end_crystal",
   "sortnum": 4
 }

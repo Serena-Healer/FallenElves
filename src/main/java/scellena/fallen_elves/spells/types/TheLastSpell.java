@@ -2,7 +2,9 @@ package scellena.fallen_elves.spells.types;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.text.TextComponentTranslation;
@@ -10,6 +12,7 @@ import scellena.fallen_elves.data.entity.EntityCapabilityProvider;
 import scellena.fallen_elves.decay.BlockDecayHelper;
 import scellena.fallen_elves.potions.PotionsHandler;
 import scellena.fallen_elves.spells.SpellBase;
+import scellena.fallen_elves.util.SkillUtils;
 
 public class TheLastSpell extends SpellBase {
 
@@ -20,6 +23,7 @@ public class TheLastSpell extends SpellBase {
     public boolean onRightClick() {
         tick = 0;
         pos = getOwner().getPosition();
+        SkillUtils.playSoundFromServer(getOwner().world, new Vec3d(pos.getX(), pos.getY(), pos.getZ()), SoundEvents.BLOCK_END_PORTAL_SPAWN, SoundCategory.PLAYERS, 1, 0.5F);
         return true;
     }
 
@@ -44,6 +48,7 @@ public class TheLastSpell extends SpellBase {
                     }
                 }
             }
+            SkillUtils.playSoundFromServer(getOwner().world, new Vec3d(pos.getX(), pos.getY(), pos.getZ()), SoundEvents.ENTITY_ZOMBIE_BREAK_DOOR_WOOD, SoundCategory.PLAYERS, 1, 1);
         }
         if(tick == 100){
             getOwner().sendMessage(new TextComponentTranslation("spell.fallen_elves:the_last.msg1"));

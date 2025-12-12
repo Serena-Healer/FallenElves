@@ -1,12 +1,12 @@
 {
-  "name": "勇者の挑戦",
-  "icon": "fallen_elves:material_elf",
+  "name": "The challenge of luminary",
+  "icon": "fallen_elves:material_luminary",
   "category": "fallen_elves:decay",
   "advancement": "fallen_elves:luminary",
   "pages": [
     {
       "type": "text",
-      "text": "この世界に終焉をもたらす者として知られるようになってきました。$(l:entities/luminary)勇者セーヴァ$(/l)が平和を求めて戦いを挑んできます。$(br2)発生レベル: $(#808)20"
+      "text": "You are now knows as the one who brings the termination of this world. $(l:entities/luminary)Luminary Sevar$(/l) tries to defeat for the world peace.$(br2)Starting from level $(#808)20"
     }
   ]
 }

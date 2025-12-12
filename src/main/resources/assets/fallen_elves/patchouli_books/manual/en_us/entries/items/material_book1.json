@@ -1,15 +1,16 @@
 {
-  "name": "空の魔導書",
+  "name": "Empty Spellbook",
   "icon": "fallen_elves:book_material1",
   "category": "fallen_elves:items",
   "pages": [
     {
       "type": "text",
-      "text": "本に魔力を込めたもので、魔法書のベースになります。これに自然物を合成することで、その物質の性質に応じた魔法の書になります。"
+      "text": "A book infused with magical power used as the base of spellbook. Infuse the power of natural items to make spellbook with nature of the combined items."
     },
     {
       "type": "crafting",
       "recipe": "fallen_elves:book_material1"
     }
-  ]
+  ],
+  "sortnum": 21
 }

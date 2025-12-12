@@ -1,15 +1,16 @@
 {
-  "name": "空の上級魔導書",
+  "name": "Empty Apprentice Spellbook",
   "icon": "fallen_elves:book_material2",
   "category": "fallen_elves:items",
   "pages": [
     {
       "type": "text",
-      "text": "強力な魔法の書をつくるためには、魔法書により強い魔力を込めなければなりません。強い魔力を引き出すためにはこの上級魔導書が用いられます。"
+      "text": "In order to make stronger spellbooks, the base book must have higher amount of mana. To realize it, this book with higher amount of mana is used."
     },
     {
       "type": "crafting",
       "recipe": "fallen_elves:book_material2"
     }
-  ]
+  ],
+  "sortnum": 22
 }

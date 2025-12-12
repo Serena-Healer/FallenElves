@@ -1,6 +1,6 @@
 {
-  "name": "呪文",
-  "description": "この世界で使える呪文に関する章です。",
+  "name": "Spells",
+  "description": "This chapter describes spells you can use.",
   "icon": "fallen_elves:spellbook_heal",
   "sortnum": 1
 }

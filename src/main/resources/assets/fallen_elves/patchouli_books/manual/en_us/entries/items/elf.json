@@ -1,16 +1,17 @@
 {
-  "name": "エルフの羽",
+  "name": "Elven Wing",
   "icon": "fallen_elves:material_elf",
   "category": "fallen_elves:items",
   "advancement": "fallen_elves:elf",
   "pages": [
     {
       "type": "text",
-      "text": "エルフの身体についている羽です。空を飛べたりはしませんが、魔力を引き出す一つの器官となっています。$(l:entities/elf)エルフの戦士$(/l)が落としていきます。"
+      "text": "Wings on the elven body. Though elves cannot fly the sky, these wings work as a part of their arcane component.$(l:entities/elf)Elf Mages$(/l) drop them."
     },
     {
       "type": "spotlight",
       "item": "fallen_elves:material_elf"
     }
-  ]
+  ],
+  "sortnum": 31
 }

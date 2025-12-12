@@ -1,0 +1,12 @@
+{
+  "name": "破壊衝動",
+  "icon": "minecraft:stone_pickaxe",
+  "category": "fallen_elves:decay",
+  "advancement": "fallen_elves:decay3",
+  "pages": [
+    {
+      "type": "text",
+      "text": "意志をさらに乗っ取られ、世界を、エルフを滅ぼしたいという願望に駆られるようになります。何らかの友好Mobを倒すまで身体が重く感じられるようになります。$(br2)発生レベル: $(#808)15"
+    }
+  ]
+}

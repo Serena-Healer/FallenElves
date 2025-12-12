@@ -1,11 +1,11 @@
 {
-  "name": "魔力の結晶",
+  "name": "Mana Ingot",
   "icon": "fallen_elves:magic_ingot",
   "category": "fallen_elves:items",
   "pages": [
     {
       "type": "text",
-      "text": "魔力の結晶はその名の通り世界に満ちた魔力が地下で結晶化したものです。地下深くで採掘するとマナストーンと呼ばれる鉱石が見つかり、製錬することで魔力の結晶を精製できます。"
+      "text": "Mana ingots are crystal of mana, which is in everywhere of the world, populated underground. The Mana Stone ore is found in deep underground and refine it by smelting to produce the ingot."
     },
     {
       "type": "spotlight",

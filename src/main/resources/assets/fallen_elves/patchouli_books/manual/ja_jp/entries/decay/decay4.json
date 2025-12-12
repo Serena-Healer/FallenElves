@@ -1,0 +1,12 @@
+{
+  "name": "同胞意識",
+  "icon": "minecraft:apple",
+  "category": "fallen_elves:decay",
+  "advancement": "fallen_elves:decay4",
+  "pages": [
+    {
+      "type": "text",
+      "text": "闇の使いに対するさらに強い同胞意識を持つようになってしまいます。この効果を受けると、少しの間敵対Mobを倒すと自身が生きる意志を失い$(#f00)倒れてしまいます。$()気を付けましょう。$(br2)発生レベル: $(#808)25"
+    }
+  ]
+}

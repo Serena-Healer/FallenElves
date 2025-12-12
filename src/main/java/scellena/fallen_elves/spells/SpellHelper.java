@@ -20,11 +20,20 @@ public class SpellHelper {
      * @return 経験値差分
      */
     public static double getXPRequired(int level){
+        /*
         if(level == 1) return 200;
         if(level == 2) return 700;
         if(level == 3) return 1500;
         if(level == 4) return 2500;
         return Math.pow(1.05, level) * 5000;
+         */
+
+        //コンテスト版テーブル
+        if(level == 1) return 200;
+        if(level == 2) return 500;
+        if(level == 3) return 1000;
+        if(level == 4) return 1500;
+        return Math.pow(1.05, level) * 2000;
     }
 
     public static boolean checkManaCost(Entity owner, SpellBase spell){

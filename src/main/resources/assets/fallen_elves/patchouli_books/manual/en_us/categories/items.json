@@ -1,6 +1,6 @@
 {
-  "name": "道具",
-  "description": "この世界で手に入れられる道具に関する章です。",
+  "name": "Items",
+  "description": "This chapter describes items you can collect in this world.",
   "icon": "minecraft:chest",
   "sortnum": 2
 }

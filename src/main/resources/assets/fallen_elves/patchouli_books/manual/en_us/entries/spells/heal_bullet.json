@@ -1,12 +1,12 @@
 {
-  "name": "いやしの波動",
+  "name": "Healing Missile",
   "icon": "fallen_elves:spellbook_heal_bullet",
   "category": "fallen_elves:spells",
   "advancement": "fallen_elves:elf",
   "pages": [
     {
       "type": "text",
-      "text": "魔力を生命力に変換したうえでその生命力を外に放ちます。当たった人間の少し深い傷を癒します。"
+      "text": "Converts mana into life and throws out to center. Heals wounds of a ally who is hit."
     },
     {
       "type": "crafting",

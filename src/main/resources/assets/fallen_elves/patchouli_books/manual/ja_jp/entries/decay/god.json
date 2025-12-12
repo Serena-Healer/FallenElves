@@ -1,0 +1,12 @@
+{
+  "name": "神の裁き",
+  "icon": "fallen_elves:material_god",
+  "category": "fallen_elves:decay",
+  "advancement": "fallen_elves:god",
+  "pages": [
+    {
+      "type": "text",
+      "text": "身体が完全に闇の力に覆われてしまった今や$(l:entities/god)創世神エスパース$(/l)も看過していられません。すぐにでも、何度でもあなたは創世神の裁きを受けることとなるでしょう。$(br2)発生レベル: $(#808)30"
+    }
+  ]
+}

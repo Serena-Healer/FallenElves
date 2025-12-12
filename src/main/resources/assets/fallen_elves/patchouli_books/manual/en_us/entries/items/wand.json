@@ -1,11 +1,11 @@
 {
-  "name": "杖",
+  "name": "Wands",
   "icon": "fallen_elves:wand",
   "category": "fallen_elves:items",
   "pages": [
     {
       "type": "text",
-      "text": "杖は魔法を使うために必要不可欠な補助具です。最初の杖は魔法の樹木と金で創ることができます。この世界にはより強い魔力を引き出せるようになる杖も存在するというので探してみましょう。"
+      "text": "Wands are the essential tools to cast spells. The beginner's wand can be crafted from Magiwood and gold ingot. It is said that there are wands with stronger magical power."
     },
     {
       "type": "crafting",

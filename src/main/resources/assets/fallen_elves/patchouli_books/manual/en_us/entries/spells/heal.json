@@ -1,11 +1,11 @@
 {
-  "name": "ヒール",
+  "name": "Heal",
   "icon": "fallen_elves:spellbook_heal",
   "category": "fallen_elves:spells",
   "pages": [
     {
       "type": "text",
-      "text": "魔力を生命力に変換し自身の傷を癒します。最初から使える最も基本的な魔法の一つです。"
+      "text": "Converts mana into life and heals caster's wound. One of the basic spells you can use first."
     },
     {
       "type": "crafting",

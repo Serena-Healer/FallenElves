@@ -1,12 +1,12 @@
 {
-  "name": "破滅の波動",
+  "name": "Wave of Devastation",
   "icon": "fallen_elves:spellbook_explode",
   "category": "fallen_elves:spells",
   "advancement": "fallen_elves:luminary",
   "pages": [
     {
       "type": "text",
-      "text": "秘めた魔法を解き放ち、自身から広い範囲の敵に致命傷を負わせます。"
+      "text": "Burst great amount of magical power and deal lethal damage for the large area of entities from caster."
     },
     {
       "type": "crafting",

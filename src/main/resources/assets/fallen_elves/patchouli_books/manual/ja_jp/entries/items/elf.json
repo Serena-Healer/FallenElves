@@ -1,0 +1,17 @@
+{
+  "name": "エルフの羽",
+  "icon": "fallen_elves:material_elf",
+  "category": "fallen_elves:items",
+  "advancement": "fallen_elves:elf",
+  "pages": [
+    {
+      "type": "text",
+      "text": "エルフの身体についている羽です。空を飛べたりはしませんが、魔力を引き出す一つの器官となっています。$(l:entities/elf)エルフの戦士$(/l)が落としていきます。"
+    },
+    {
+      "type": "spotlight",
+      "item": "fallen_elves:material_elf"
+    }
+  ],
+  "sortnum": 31
+}

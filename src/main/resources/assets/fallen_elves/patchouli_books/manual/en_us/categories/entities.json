@@ -1,6 +1,6 @@
 {
-  "name": "世界の住人たち",
-  "description": "世界に住まう存在に関する章です。",
+  "name": "Livings in the world",
+  "description": "This chapter describes living in this world.$(br)To unlock all bosses, you must reach level 30.",
   "icon": "fallen_elves:material_elf",
   "sortnum": 3
 }

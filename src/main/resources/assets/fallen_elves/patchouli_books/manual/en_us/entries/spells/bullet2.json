@@ -1,12 +1,12 @@
 {
-  "name": "漆黒弾",
+  "name": "Dark Missile",
   "icon": "fallen_elves:spellbook_bullet_2",
   "category": "fallen_elves:spells",
   "advancement": "fallen_elves:elf",
   "pages": [
     {
       "type": "text",
-      "text": "より破壊的に闇の力を正面に放ち、当たった相手に暗黒弾より大きなダメージを与えます。魔力が上がると効果が大幅に上がっていきます。"
+      "text": "Shoots more devastating dark power and deals more damage to a entity hit. Magical might increases the effect much more."
     },
     {
       "type": "crafting",

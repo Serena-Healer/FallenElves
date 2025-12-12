@@ -1,12 +1,12 @@
 {
-  "name": "エルフの襲撃",
+  "name": "Elven horde",
   "icon": "fallen_elves:material_elf",
   "category": "fallen_elves:decay",
   "advancement": "fallen_elves:elf",
   "pages": [
     {
       "type": "text",
-      "text": "闇の力を少しばかりまとってきたのを感じたのか、勇敢な$(l:entities/elf)エルフの戦士たち$(/l)が集団で襲ってきます。レベルが上がるとともに同時に襲ってくる仲間の数も増えていきます。$(br2)発生レベル: $(#808)10"
+      "text": "Some thinks you started to wear dark power, and horde of $(l:entities/elf)Elf mages(/l) starts to raid. The higher your level is, the more elves joins the raid.$(br2)Starting from level $(#808)10"
     }
   ]
 }

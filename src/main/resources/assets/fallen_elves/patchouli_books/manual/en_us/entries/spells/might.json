@@ -1,12 +1,12 @@
 {
-  "name": "魔力集中",
+  "name": "Concentration",
   "icon": "fallen_elves:spellbook_might",
   "category": "fallen_elves:spells",
   "advancement": "fallen_elves:luminary",
   "pages": [
     {
       "type": "text",
-      "text": "自身の魔力を集中させ、しばらく魔法攻撃で与えるダメージを上げます。効果量はこうげき魔力に応じて増加します。"
+      "text": "Concentrate your magical power and increases magic damage dealt for a period of time. The effect increases by Magical Might."
     },
     {
       "type": "crafting",

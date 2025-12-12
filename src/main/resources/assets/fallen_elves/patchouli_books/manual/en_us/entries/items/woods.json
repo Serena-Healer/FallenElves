@@ -1,11 +1,11 @@
 {
-  "name": "魔法の樹木",
+  "name": "Magical Woods",
   "icon": "fallen_elves:logs",
   "category": "fallen_elves:items",
   "pages": [
     {
       "type": "text",
-      "text": "魔法の樹木は世界のあちこちに生えている紫色の木です。よく見つかりますが、蓄えている魔力の量は多く、様々な魔道具の制作に用いられます。ちなみにエルフの間では建材としても用いられます。"
+      "text": "Magical Woods are the purple woods found in places in the world. You can find in many places and it contains high amount of mana, being used to craft various magical items. Also used by elves for buildings."
     },
     {
       "type": "crafting",

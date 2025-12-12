@@ -1,11 +1,11 @@
 {
-  "name": "魔力",
+  "name": "Magical Power",
   "icon": "minecraft:book",
   "category": "fallen_elves:introduction",
   "pages": [
     {
       "type": "text",
-      "text": "魔力を上げると使う魔法の効果も上昇していきます。魔力はレベルアップごとに各5ポイント上昇し、さらに使う杖に応じて上がります。$(br)$(#800)こうげき魔力$()...攻撃魔法の威力が上がります。$(br)$(#080)かいふく魔力$()...回復魔法や結界の効果が上がります。"
+      "text": "Magical Power increases effect of your spells. Each type of power increases by 5 for each level, and also increased by your wand.$(br)$(#800)Magical Might$()...Increases your damage dealt from spells.$(br)$(#080)Magical Mending$()...Increases effect of healing and shield."
     }
   ],
   "sortnum": 4

@@ -1,0 +1,16 @@
+{
+  "name": "いやしの波動",
+  "icon": "fallen_elves:spellbook_heal_bullet",
+  "category": "fallen_elves:spells",
+  "advancement": "fallen_elves:elf",
+  "pages": [
+    {
+      "type": "text",
+      "text": "魔力を生命力に変換したうえでその生命力を外に放ちます。当たった人間の少し深い傷を癒します。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:spellbook_heal_bullet"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "長老エルフの実",
+  "icon": "fallen_elves:mana_food3",
+  "category": "fallen_elves:items",
+  "advancement": "fallen_elves:luminary",
+  "pages": [
+    {
+      "type": "text",
+      "text": "エルフの中でも特に長く生きた長老が使っていたとされる実で、魔力量はトップクラスに多いとされています。$(br)食べるとマナを大きく回復します。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:mana_food3"
+    }
+  ],
+  "sortnum": 13
+}

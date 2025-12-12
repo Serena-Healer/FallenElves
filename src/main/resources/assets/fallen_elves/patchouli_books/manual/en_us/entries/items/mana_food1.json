@@ -1,15 +1,16 @@
 {
-  "name": "エルフの実",
+  "name": "Elf Fruit",
   "icon": "fallen_elves:mana_food1",
   "category": "fallen_elves:items",
   "pages": [
     {
       "type": "text",
-      "text": "魔法を絶えず使っているエルフが育てている実です。エルフたちは普段からこれを食べて魔力を蓄えて生活しています。$(br)食べるとマナを少し回復します。"
+      "text": "A fruit elves are farming. Is elven daily foods to collect their mana to use in lives.$(br)Consume to recover mana for small amount."
     },
     {
       "type": "crafting",
       "recipe": "fallen_elves:mana_food1"
     }
-  ]
+  ],
+  "sortnum": 11
 }

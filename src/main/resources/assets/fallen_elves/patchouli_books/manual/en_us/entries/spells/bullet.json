@@ -1,11 +1,11 @@
 {
-  "name": "暗黒弾",
+  "name": "Black Missile",
   "icon": "fallen_elves:spellbook_bullet",
   "category": "fallen_elves:spells",
   "pages": [
     {
       "type": "text",
-      "text": "闇の力を正面に放ち、当たった相手にダメージを与えます。最初から使える最も基本的な魔法の一つです。"
+      "text": "Shoot power of dark to the direction casters facing and deals damage to entities hit. One of the basic spells you can use first."
     },
     {
       "type": "crafting",

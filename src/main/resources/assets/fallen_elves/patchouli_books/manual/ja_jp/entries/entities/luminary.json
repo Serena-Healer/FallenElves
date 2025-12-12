@@ -1,0 +1,21 @@
+{
+  "name": "勇者セーヴァ",
+  "icon": "fallen_elves:material_luminary",
+  "category": "fallen_elves:entities",
+  "advancement": "fallen_elves:luminary",
+  "pages": [
+    {
+      "type": "text",
+      "text": "エルフの世界を守る使命を持った勇者で、この世界を闇に侵そうとしている邪神を討つため旅をしていました。$(br)常に希望を絶やさず持っており、善悪がはっきりしているタイプで、闇に染まった存在には容赦しません。"
+    },
+    {
+      "type": "text",
+      "text": "体が強い闇に侵されたあなたも容赦なく標的にしてきます。$(br)魔法での攻撃の他、魔力で補強された体を生かした回転斬りやダッシュ斬りを放ってくることもあります。距離をとって魔法で迎え撃ちましょう。"
+    },
+    {
+      "type": "entity",
+      "entity": "fallen_elves:boss_luminary"
+    }
+  ],
+  "sortnum": 1
+}

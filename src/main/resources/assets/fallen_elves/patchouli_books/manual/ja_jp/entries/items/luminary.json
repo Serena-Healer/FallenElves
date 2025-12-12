@@ -1,0 +1,17 @@
+{
+  "name": "勇気のかたまり",
+  "icon": "fallen_elves:material_luminary",
+  "category": "fallen_elves:items",
+  "advancement": "fallen_elves:luminary",
+  "pages": [
+    {
+      "type": "text",
+      "text": "世界を守る強い意志が結晶となったものです。$(l:entities/luminary)勇者セーヴァ$(/l)を倒すと落としていきます。"
+    },
+    {
+      "type": "spotlight",
+      "item": "fallen_elves:material_luminary"
+    }
+  ],
+  "sortnum": 32
+}

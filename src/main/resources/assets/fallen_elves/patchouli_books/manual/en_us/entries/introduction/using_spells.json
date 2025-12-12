@@ -1,11 +1,11 @@
 {
-  "name": "魔法を使うまで",
+  "name": "Using your first spell",
   "icon": "fallen_elves:wand",
   "category": "fallen_elves:introduction",
   "pages": [
     {
       "type": "text",
-      "text": "魔法を使うには、まず杖・魔法書・魔術作業台の3つの物を手に入れる必要があります。いずれも作業台でのクラフトで作成可能です。$(br2)素材として必要な「魔法の樹木」は、地上にときどき生えている紫色の木です。魔法の樹木は魔力的な力を帯びており、さまざまな魔道具の作成に用いることができます。"
+      "text": "In order to use spells, you need 3 components: Wand, Spellbook and Magic Writing Desk. All of them can be crafted with a crafting table.$(br2)One of the materials, Magiwoods, is the purple woods on overworld. They have magical power and used for various magical items."
     },
     {
       "type": "crafting",
@@ -19,11 +19,11 @@
     },
     {
       "type": "text",
-      "text": "これらを手に入れたら、魔術作業台を置き、調べてみましょう。$(br)左上のスロットには杖・右上の5つあるスロットには魔法書が入ります。これらを置いた状態で杖を取り出すと、杖に魔法がセットされた状態になります。$(#f00)杖を置いて魔法書を何も置かずに杖を取り出すと、セットした魔法がリセットされるので注意しましょう。"
+      "text": "After collecting them, place the desk and use.$(br)Put your wand in the top-left slot and spellbooks in the top-right 5 slots. After putting these items, just take the wand and spells are set.#(f00)Taking a wand without putting any spells will reset the spells already set to the wands."
     },
     {
       "type": "text",
-      "text": "セットした魔法は杖をメインハンドに持ち、設定したキーで魔法を切り替え(画面中央に選択中の魔法が表示されます)、右クリックで使用することができます。詠唱にはマナを必要とするので注意しましょう。$(br)魔法を使っていくと魔術経験値を得られ、一定量たまるとレベルアップします。レベルを上げるとマナや魔法の効果が向上していきますが...?"
+      "text": "You can cast spells by selecting the spells with $(k:next_skill) and $(k:back_skill) while holding the wands(selected spell is shown on the center of screen), and use the wand. It requires some mana.$(br)Using spells gives you experience and eventually level up, which increases your mana capacity and magical power, but...?"
     }
   ],
   "sortnum": 1

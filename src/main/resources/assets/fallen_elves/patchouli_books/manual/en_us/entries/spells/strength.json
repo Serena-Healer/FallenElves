@@ -1,12 +1,12 @@
 {
-  "name": "魔力変異",
+  "name": "Mutation",
   "icon": "fallen_elves:spellbook_might",
   "category": "fallen_elves:spells",
   "advancement": "fallen_elves:elf",
   "pages": [
     {
       "type": "text",
-      "text": "自身の魔力を体に取り込み、しばらく物理攻撃で与えるダメージを上げます。効果量はこうげき魔力に応じて増加します。"
+      "text": "Turns your mana into your physical power and increases physical damage dealt for a short period of time. The effect increases by Magical Might."
     },
     {
       "type": "crafting",

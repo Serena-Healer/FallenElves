@@ -1,15 +1,15 @@
 {
-  "name": "魔法の書",
+  "name": "Spellbooks",
   "icon": "fallen_elves:spellbook_heal",
   "category": "fallen_elves:items",
   "pages": [
     {
       "type": "text",
-      "text": "魔法書は魔法を使うのに必要なアイテムです。バニラ及びこのModで追加されたアイテムでクラフトすることができ、一度作ってしまえば何度杖に魔法をセットしても消費されません。しかし、杖にセットせずに単体で使うことはできないので気を付けましょう。"
+      "text": "Spellbooks is required to cast spells. They can be crafted from vanilla and this mod's items and can be used multiple times to set a spell to wand. However you cannot cast spell without setting it to your wand!"
     },
     {
       "type": "text",
-      "text": "それぞれの魔法書のレシピは作成可能な状態になるとこの入門書に掲載されていくので随時確認しましょう。"
+      "text": "Each recipe of spellbook will be added to this manual when you are eligible. Check it frequently!"
     }
   ]
 }

@@ -1,16 +1,16 @@
 {
-  "name": "創世神エスパース",
+  "name": "The God Espace",
   "icon": "fallen_elves:material_god",
   "category": "fallen_elves:entities",
   "advancement": "fallen_elves:god",
   "pages": [
     {
       "type": "text",
-      "text": "このエルフたちの生きる世界を管理している創世神です。神界からは「知恵の神」といわれており、機知に富んでおり、持つ魔力も並々ではありません。神界では他の神々に相談を持ち掛けられたり、新たな世界を生み出す若い創世神に物事を教える中心的な神であるともいわれています。"
+      "text": "The god controlling this world of elves. In the gods' world, she is known as the god of wisdom. She has plenty of knowledge and magic power. She is said to be asked consult and mainly giving knowledge to junior gods to create new worlds."
     },
     {
       "type": "text",
-      "text": "完全に邪神の器となってしまったあなたに裁きを与えてきます。光や雷の魔法攻撃に加え、強大な魔力を集めて光の力を一気に解き放ち、周囲の闇をかき消す能力を持っています。魔力を集め始めたらすぐに離れなければ、どれだけ守りを固めていても一瞬のうちに世界から消し去られてしまいます。注意しましょう。"
+      "text": "She wants to punish you who is completely a part of the Dark One. In addition to using light and thunder spells, gather huge amount of power and release lights to demolish dark power around. Get away soon when she starts to gather powers or you instantly vanish ignoring your defence."
     },
     {
       "type": "entity",

@@ -1,0 +1,16 @@
+{
+  "name": "破滅の波動",
+  "icon": "fallen_elves:spellbook_explode",
+  "category": "fallen_elves:spells",
+  "advancement": "fallen_elves:luminary",
+  "pages": [
+    {
+      "type": "text",
+      "text": "秘めた魔法を解き放ち、自身から広い範囲の敵に致命傷を負わせます。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:spellbook_explode"
+    }
+  ]
+}

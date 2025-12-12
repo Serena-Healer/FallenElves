@@ -1,16 +1,17 @@
 {
-  "name": "知力の輝石",
+  "name": "Wisdom Gem",
   "icon": "fallen_elves:material_god",
   "category": "fallen_elves:items",
   "advancement": "fallen_elves:god",
   "pages": [
     {
       "type": "text",
-      "text": "知恵をつかさどる$(l:entities/god)創世神エスパース$(/l)の神力が形になったもので、きわめて強い魔力を引き出すことができるといわれています。"
+      "text": "A crystal of $(l:entities/god)The God Espace$(/l)'s magical power and very strong power is in it. It is said that elves can extract huge amount of magic power from this crystal."
     },
     {
       "type": "spotlight",
       "item": "fallen_elves:material_god"
     }
-  ]
+  ],
+  "sortnum": 33
 }

@@ -1,12 +1,12 @@
 {
-  "name": "同胞意識",
-  "icon": "fallen_elves:material_elf",
+  "name": "Sense of family",
+  "icon": "minecraft:apple",
   "category": "fallen_elves:decay",
   "advancement": "fallen_elves:decay4",
   "pages": [
     {
       "type": "text",
-      "text": "闇の使いに対するさらに強い同胞意識を持つようになってしまいます。この効果を受けると、少しの間敵対Mobを倒すと自身が生きる意志を失い$(#f00)倒れてしまいます。$()気を付けましょう。$(br2)発生レベル: $(#808)25"
+      "text": "Now you may think the minions of the Dark One is also your allies. When this happens, if you killed any hostile mob, You $(#f00)instantly lose your wish to live.$()Watch out!$(br2)Starting from level $(#808)25"
     }
   ]
 }

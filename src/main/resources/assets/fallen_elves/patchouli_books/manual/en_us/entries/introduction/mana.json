@@ -1,11 +1,11 @@
 {
-  "name": "マナ",
+  "name": "Mana",
   "icon": "fallen_elves:magic_ingot",
   "category": "fallen_elves:introduction",
   "pages": [
     {
       "type": "text",
-      "text": "マナは、魔法を使うのに必要なリソースです。画面の左上に青いゲージで表示され、魔法を使うと消費し、時間とともに回復します。$(br)マナの上限量はレベルアップとともに上昇していきます。"
+      "text": "Mana is the resource you need to cast spells. Shown in the top-left corner as the blue meter. Consumed to cast spell and recovered by time.$(br)Mana capacity increases by increasing levels."
     }
   ],
   "sortnum": 2

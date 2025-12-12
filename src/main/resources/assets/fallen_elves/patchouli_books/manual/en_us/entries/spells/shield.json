@@ -1,12 +1,12 @@
 {
-  "name": "ダークバリア",
+  "name": "Dark Barrier",
   "icon": "fallen_elves:spellbook_shield",
   "category": "fallen_elves:spells",
   "advancement": "fallen_elves:luminary",
   "pages": [
     {
       "type": "text",
-      "text": "魔力で結界を生成し自分の身にまといます。結界は魔力に応じた量の攻撃を防いでくれます。"
+      "text": "Create a barrier and wear around caster's body. The barrier prevents some amount of damage, increased by caster's Magical Mending."
     },
     {
       "type": "crafting",

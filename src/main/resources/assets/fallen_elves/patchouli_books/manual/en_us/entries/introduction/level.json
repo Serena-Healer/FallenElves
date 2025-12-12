@@ -1,11 +1,11 @@
 {
-  "name": "魔術経験値とレベル",
+  "name": "Magic experience and levels",
   "icon": "minecraft:experience_bottle",
   "category": "fallen_elves:introduction",
   "pages": [
     {
       "type": "text",
-      "text": "魔術経験値は、魔法を使っていくと上がっていく熟練度のようなものです。画面左上に紫色のゲージで表示されており、満タンになると横に数字で表示されているレベルが1上がります。$(br)レベルが上がるとマナ上限と使う魔法の効果が上がっていきます。$(br2)$(800080)レベルが5に達するとある異変が...?"
+      "text": "Magic experience can be increased by using spells. It is shown in left-top of the screen as the purple meter. Fill it once and your level increases by one, which is shown by number just right of the meters.$(br)The higher your level is, the more mana capacity and effect of spells you have.$(br2)$(#800080)When you reach level 5, you might notice something strange...?"
     }
   ],
   "sortnum": 3

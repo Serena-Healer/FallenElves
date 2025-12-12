@@ -1,12 +1,12 @@
 {
-  "name": "エリアヒール",
+  "name": "Healing Area",
   "icon": "fallen_elves:spellbook_heal_bullet",
   "category": "fallen_elves:spells",
   "advancement": "fallen_elves:luminary",
   "pages": [
     {
       "type": "text",
-      "text": "一気に多くの魔力を生命力に変換し放出します。周囲にいる人間たちみなを深い傷であれ一気に癒すことができます。"
+      "text": "Converts massive mana into life and burst out at once. Allies around the caster are healed even heavier wounds at a moment."
     },
     {
       "type": "crafting",

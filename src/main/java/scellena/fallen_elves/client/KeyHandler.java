@@ -18,8 +18,8 @@ import scellena.fallen_elves.network.SPackets.SkillSetPacket;
 @SideOnly(Side.CLIENT)
 public class KeyHandler {
 
-    public static final KeyBinding GO_NEXT_SKILL = new KeyBinding("key.next_skill", Keyboard.KEY_NONE,"key.categories." + FallenElves.MOD_ID);
-    public static final KeyBinding GO_BACK_SKILL = new KeyBinding("key.back_skill", Keyboard.KEY_NONE,"key.categories." + FallenElves.MOD_ID);
+    public static final KeyBinding GO_NEXT_SKILL = new KeyBinding("key.next_skill", Keyboard.KEY_V,"key.categories." + FallenElves.MOD_ID);
+    public static final KeyBinding GO_BACK_SKILL = new KeyBinding("key.back_skill", Keyboard.KEY_C,"key.categories." + FallenElves.MOD_ID);
 
     @SubscribeEvent
     public void tickEvent(TickEvent.PlayerTickEvent e) {
