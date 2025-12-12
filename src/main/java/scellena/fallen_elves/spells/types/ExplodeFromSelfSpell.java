@@ -19,7 +19,7 @@ public class ExplodeFromSelfSpell extends SpellBase {
 
     @Override
     public boolean onRightClick() {
-        position = getOwner().getPositionVector().add(0, 1.5, 0);
+        position = getOwner().getPositionVector().add(0, 0.2, 0);
         duration = 40;
         return true;
     }
