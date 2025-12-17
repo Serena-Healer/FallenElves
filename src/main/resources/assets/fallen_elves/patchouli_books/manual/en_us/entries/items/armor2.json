@@ -1,0 +1,23 @@
+{
+  "name": "High Elven Robe",
+  "icon": "fallen_elves:apprentice_chestplate",
+  "category": "fallen_elves:items",
+  "advancement": "fallen_elves:elf",
+  "pages": [
+    {
+      "type": "text",
+      "text": "A set of robe used by apprentice to master elves. This increases mana more than one used by usual elves,"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:armor/helmet2",
+      "recipe2": "fallen_elves:armor/chestplate2"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:armor/leggings2",
+      "recipe2": "fallen_elves:armor/boots2"
+    }
+  ],
+  "sortnum": 32
+}

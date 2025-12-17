@@ -2,8 +2,11 @@ package scellena.fallen_elves.proxy;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.client.renderer.color.IItemColor;
+import net.minecraft.client.renderer.color.ItemColors;
 import net.minecraft.item.Item;
 import net.minecraft.world.World;
+import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.MinecraftForge;
@@ -77,6 +80,20 @@ public class ClientProxy extends CommonProxy{
             EntityHandler.registerModels();
             FluidsHandler.registerRenderers();
         }
+
+        @SubscribeEvent
+        @SideOnly(Side.CLIENT)
+        public static void itemColorHandlers(ColorHandlerEvent.Item event) {
+            ItemColors colors = event.getItemColors();
+            System.out.println(colors);
+            for(IItemColor c : ItemHandler.colors){
+                System.out.println(c);
+                if(c instanceof Item) {
+                    colors.registerItemColorHandler(c, (Item)c);
+                }
+            }
+        }
+
     }
 
     @Override

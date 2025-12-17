@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "planks",
+  "pattern": [
+    " A ",
+    "BCB",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "fallen_elves:material_elf",
+      "data": 0
+    },
+    "B": {
+      "item": "minecraft:gold_ingot",
+      "data": 0
+    },
+    "C": {
+      "item": "minecraft:leather_leggings",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fallen_elves:apprentice_leggings",
+    "data": 0,
+    "count": 1
+  }
+}

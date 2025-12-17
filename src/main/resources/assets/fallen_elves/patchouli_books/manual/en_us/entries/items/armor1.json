@@ -1,0 +1,22 @@
+{
+  "name": "Elven Robe",
+  "icon": "fallen_elves:beginner_chestplate",
+  "category": "fallen_elves:items",
+  "pages": [
+    {
+      "type": "text",
+      "text": "A set of robe worn by general elves. Wearing this robe to increase mana and magical power by a little amount."
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:armor/helmet1",
+      "recipe2": "fallen_elves:armor/chestplate1"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:armor/leggings1",
+      "recipe2": "fallen_elves:armor/boots1"
+    }
+  ],
+  "sortnum": 31
+}

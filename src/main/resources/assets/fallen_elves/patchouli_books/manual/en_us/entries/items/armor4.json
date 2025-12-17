@@ -1,0 +1,23 @@
+{
+  "name": "White Mage Robe",
+  "icon": "fallen_elves:mending_chestplate",
+  "category": "fallen_elves:items",
+  "advancement": "fallen_elves:luminary",
+  "pages": [
+    {
+      "type": "text",
+      "text": "This robe is forwarded for white mages who use healing spells to save lives of elves. This robe increases wearer's Magical Mending a lot, but less mana than apprentice robe."
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:armor/helmet4",
+      "recipe2": "fallen_elves:armor/chestplate4"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:armor/leggings4",
+      "recipe2": "fallen_elves:armor/boots4"
+    }
+  ],
+  "sortnum": 34
+}

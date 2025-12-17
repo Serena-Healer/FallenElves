@@ -1,0 +1,23 @@
+{
+  "name": "Black Mage Robe",
+  "icon": "fallen_elves:might_chestplate",
+  "category": "fallen_elves:items",
+  "advancement": "fallen_elves:luminary",
+  "pages": [
+    {
+      "type": "text",
+      "text": "This robe is forwarded for black mages who use attacking spells to defend their village. This robe increases wearer's Magical Might a lot, but less mana than apprentice robe."
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:armor/helmet3",
+      "recipe2": "fallen_elves:armor/chestplate3"
+    },
+    {
+      "type": "crafting",
+      "recipe": "fallen_elves:armor/leggings3",
+      "recipe2": "fallen_elves:armor/boots3"
+    }
+  ],
+  "sortnum": 33
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "farland1ng:armor/arcane_robe1",
+        "layer1": "farland1ng:armor/arcane_robe2"
+    }
+}

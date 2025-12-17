@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "text",
-      "text": "Main Creator: $(#008000)ScellenaHealer$()$(br)Some textures: $(#000080)Farland1ng$()$(br)Testers: $(#800000)(未定)$()$(br)Sounds: $(#808000)Sound Effect Lab$()$(br)Library Used: $(#800040)Patchouli$()"
+      "text": "Main Creator: $(#008000)ScellenaHealer$()$(br)Some textures: $(#000080)Farland1ng$()$(br)Sounds: $(#808000)Sound Effect Lab$()$(br)Library Used: $(#800040)Patchouli$()"
     },
     {
       "type": "text",
