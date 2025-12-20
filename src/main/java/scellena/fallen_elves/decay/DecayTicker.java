@@ -31,12 +31,15 @@ public class DecayTicker {
         EntityLivingBase living = null;
         if(entity instanceof EntityLivingBase){
             living = (EntityLivingBase) entity;
+
+            /*
             if(living.getActivePotionEffect(PotionsHandler.KILL_DESIRE) != null){
                 living.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 2, 0));
                 living.addPotionEffect(new PotionEffect(MobEffects.MINING_FATIGUE, 2, 2));
                 living.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 2, 0));
                 living.addPotionEffect(new PotionEffect(MobEffects.POISON, 2, 0));
             }
+             */
         }
 
         Random random = new Random();
@@ -54,22 +57,22 @@ public class DecayTicker {
                 switch (type) {
                     case 0:
                         key = "decay.overridden.activate";
-                        living.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20 * 60, 2));
-                        living.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 * 60, 0));
-                        living.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 20 * 60, 0));
+                        living.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 20 * 30, 2));
+                        living.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 20 * 30, 0));
+                        living.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 20 * 30, 0));
                         living.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 20 * 10, 0));
-                        living.addPotionEffect(new PotionEffect(PotionsHandler.DECAY_1, 20 * 60, 0));
+                        living.addPotionEffect(new PotionEffect(PotionsHandler.DECAY_1, 20 * 30, 0));
                         break;
                     case 1:
                         key = "decay.hostile.activate";
-                        living.addPotionEffect(new PotionEffect(PotionsHandler.KILL_DESIRE, 20 * 20, 1));
+                        living.addPotionEffect(new PotionEffect(PotionsHandler.KILL_DESIRE, 20 * 180, 1));
                         break;
                     case 2:
                         key = "decay.elf.activate";
                         int cnt = (4 + (level - 10) / 5);
                         for (int i = 0; i < cnt; i++) {
                             double arg = Math.PI * 2 * i / ((double) cnt);
-                            BlockPos pos = living.getPosition().add(Math.sin(arg) * 6, 0, Math.cos(arg) * 6);
+                            BlockPos pos = living.getPosition().add(Math.sin(arg) * 12, 0, Math.cos(arg) * 12);
                             pos = Utilities.getTopPos(living.world, pos);
                             ElfHostile elf = new ElfHostile(living.getEntityWorld());
                             elf.setLocationAndAngles(pos.getX(), pos.getY(), pos.getZ(), 0, 0);
@@ -79,7 +82,7 @@ public class DecayTicker {
                         break;
                     case 3:
                         key = "decay.alliance.activate";
-                        living.addPotionEffect(new PotionEffect(PotionsHandler.ALLIANCE, 20 * 3, 0));
+                        living.addPotionEffect(new PotionEffect(PotionsHandler.ALLIANCE, 20 * 300, 0));
                         break;
                     case 4:
                         if (bossFlag) {
@@ -95,7 +98,7 @@ public class DecayTicker {
                         break;
                     case 5:
                         key = "decay.alliance_2.activate";
-                        living.addPotionEffect(new PotionEffect(PotionsHandler.ALLIANCE_2, 20 * 3, 0));
+                        living.addPotionEffect(new PotionEffect(PotionsHandler.ALLIANCE_2, 20 * 30, 0));
                         break;
                     case 6:
                         if (bossFlag) {

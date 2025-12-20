@@ -10,8 +10,11 @@ import net.minecraft.util.EntityDamageSource;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import scellena.fallen_elves.data.entity.EntityCapabilityProvider;
+import scellena.fallen_elves.data.entity.EntityDataHandler;
 import scellena.fallen_elves.entities.mobs.templetes.HostileMob;
 import scellena.fallen_elves.potions.PotionsHandler;
+import scellena.fallen_elves.spells.SpellHelper;
 
 public class DecayEventHandler {
 
@@ -34,7 +37,11 @@ public class DecayEventHandler {
                         ((EntityLivingBase) attackedIn).addPotionEffect(new PotionEffect(MobEffects.HUNGER, 20 * 10, 2));
                     }
                 }else {
+
                     ((EntityLivingBase) attackedIn).removeActivePotionEffect(PotionsHandler.KILL_DESIRE);
+
+                    //1.1.1
+                    EntityCapabilityProvider.getEntityData(attackedIn).collectXP(SpellHelper.getXPRequired(EntityCapabilityProvider.getEntityData(attackedIn).getCurrentLevel() + 1) * 0.75);
                 }
             }
         }
